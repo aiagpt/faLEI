@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player de Áudio - Lei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .header h1 {
+            color: #1e3a8a;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+
+        .header .url {
+            color: #6b7280;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+
+        .player-container {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .text-panel {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+
+        .text-content {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #1f2937;
+            white-space: pre-wrap;
+            /* Preserva quebras de linha */
+            font-family: 'Inter', monospace;
+        }
+
+        .text-content .word {
+            display: inline;
+            padding: 2px 0;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .text-content .word.active {
+            background: #fef3c7;
+            color: #92400e;
+            font-weight: 600;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .text-content .word:hover {
+            background: #f3f4f6;
+        }
+
+        .controls-panel {
+            position: sticky;
+            top: 20px;
+        }
+
+        .audio-player {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .player-title {
+            color: #1e3a8a;
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .waveform {
+            width: 100%;
+            height: 80px;
+            background: #f3f4f6;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e5e7eb;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #1e3a8a;
+            border-radius: 3px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            color: #6b7280;
+            font-size: 0.85em;
+            margin-bottom: 20px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .control-btn {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background: #f3f4f6;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .control-btn:hover {
+            background: #e5e7eb;
+            transform: scale(1.05);
+        }
+
+        .control-btn.play {
+            width: 60px;
+            height: 60px;
+            background: #1e3a8a;
+            color: white;
+            font-size: 24px;
+        }
+
+        .control-btn.play:hover {
+            background: #1e40af;
+        }
+
+        .speed-control {
+            margin-bottom: 20px;
+        }
+
+        .speed-label {
+            color: #374151;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .speed-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .speed-btn {
+            padding: 8px;
+            border: 2px solid #e5e7eb;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #6b7280;
+            transition: all 0.2s;
+        }
+
+        .speed-btn.active {
+            border-color: #1e3a8a;
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .speed-btn:hover {
+            border-color: #1e3a8a;
+        }
+
+        .info-panel {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #e5e7eb;
+            font-size: 0.85em;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            color: #6b7280;
+        }
+
+        .info-value {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .player-container {
+                grid-template-columns: 1fr;
+            }
+
+            .controls-panel {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h1 id="lawTitle" style="margin: 0;">Carregando...</h1>
+                <a href="/history"
+                    style="background: #1e3a8a; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9em; transition: all 0.2s;">
+                    ← Voltar para Lista
+                </a>
+            </div>
+            <div class="url" id="lawUrl"></div>
+        </div>
+
+        <div class="player-container">
+            <div class="text-panel">
+                <div class="text-content" id="textContent">
+                    Carregando texto da lei...
+                </div>
+            </div>
+
+            <div class="controls-panel">
+                <div class="audio-player">
+                    <div class="player-title">🎧 Player de Áudio</div>
+
+                    <div class="waveform" id="waveform">
+                        <!-- Visualização de onda será adicionada aqui -->
+                    </div>
+
+                    <div class="progress-bar" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+
+                    <div class="time-display">
+                        <span id="currentTime">0:00</span>
+                        <span id="duration">0:00</span>
+                    </div>
+
+                    <div class="controls">
+                        <button class="control-btn" onclick="skipBackward()">⏪</button>
+                        <button class="control-btn play" id="playBtn" onclick="togglePlay()">▶️</button>
+                        <button class="control-btn" onclick="skipForward()">⏩</button>
+                    </div>
+
+                    <div class="speed-control">
+                        <label class="speed-label">Velocidade</label>
+                        <div class="speed-buttons">
+                            <button class="speed-btn" onclick="setSpeed(0.75)">0.75x</button>
+                            <button class="speed-btn active" onclick="setSpeed(1.0)">1.0x</button>
+                            <button class="speed-btn" onclick="setSpeed(1.25)">1.25x</button>
+                            <button class="speed-btn" onclick="setSpeed(1.5)">1.5x</button>
+                        </div>
+                    </div>
+
+                    <div class="speed-control">
+                        <label class="speed-label">Ajuste de Sincronia</label>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                            <button class="speed-btn" onclick="adjustOffset(-1.0)" style="flex: 0;">-1.0s</button>
+                            <button class="speed-btn" onclick="adjustOffset(-0.5)" style="flex: 0;">-0.5s</button>
+                            <span id="offsetDisplay"
+                                style="flex: 1; text-align: center; font-weight: 600; color: #1e3a8a;">+1.0s</span>
+                            <button class="speed-btn" onclick="adjustOffset(0.5)" style="flex: 0;">+0.5s</button>
+                            <button class="speed-btn" onclick="adjustOffset(1.0)" style="flex: 0;">+1.0s</button>
+                        </div>
+                        <div style="font-size: 0.75em; color: #6b7280; margin-top: 5px; text-align: center;">
+                            Ajuste se o destaque estiver adiantado ou atrasado
+                        </div>
+                    </div>
+
+                    <div class="info-panel">
+                        <div class="info-item">
+                            <span class="info-label">Palavras</span>
+                            <span class="info-value" id="wordCount">-</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Progresso</span>
+                            <span class="info-value" id="progressPercent">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" preload="auto"></audio>
+
+    <script>
+        const audio = document.getElementById('audioPlayer');
+        const playBtn = document.getElementById('playBtn');
+        const progressBar = document.getElementById('progressBar');
+        const progressFill = document.getElementById('progressFill');
+        const currentTimeEl = document.getElementById('currentTime');
+        const durationEl = document.getElementById('duration');
+        const textContent = document.getElementById('textContent');
+
+        let words = [];
+        let wordTimings = [];
+        let currentWordIndex = 0;
+        let syncOffset = 1.0; // Offset padrão de +1 segundo
+
+        // Carregar dados do job
+        async function loadJob() {
+            const jobId = new URLSearchParams(window.location.search).get('job');
+            if (!jobId) {
+                alert('Job ID não fornecido');
+                return;
+            }
+
+            try {
+                const response = await fetch(`/status/${jobId}`);
+                const job = await response.json();
+
+                if (job.status !== 'complete') {
+                    alert('Este job ainda não foi concluído');
+                    window.location.href = '/history';
+                    return;
+                }
+
+                // Carregar informações
+                document.getElementById('lawTitle').textContent = `Lei - Job #${jobId}`;
+                document.getElementById('lawUrl').textContent = job.url;
+
+                // Carregar áudio
+                audio.src = `/download/${job.filename}`;
+
+                // Carregar texto
+                await loadText(jobId);
+
+            } catch (error) {
+                console.error('Erro ao carregar job:', error);
+                alert('Erro ao carregar dados');
+            }
+        }
+
+        async function loadText(jobId) {
+            try {
+                // Carregar texto
+                const textResponse = await fetch(`/job-text/${jobId}`);
+                const textData = await textResponse.json();
+
+                if (!textData.text) {
+                    console.error('Texto não encontrado');
+                    return;
+                }
+
+                // Tentar carregar timestamps de frases
+                const timestampsResponse = await fetch(`/job-timestamps/${jobId}`);
+                const timestampsData = await timestampsResponse.json();
+
+                if (timestampsData.timestamps && timestampsData.timestamps.length > 0) {
+                    console.log('✅ Usando sincronização por frases');
+
+                    // Verificar se são timestamps de frases (tem 'text') ou palavras (tem 'word')
+                    if (timestampsData.timestamps[0].text) {
+                        // Timestamps de FRASES
+                        displaySentences(timestampsData.timestamps);
+                    } else {
+                        // Timestamps de PALAVRAS (antigo)
+                        wordTimings = timestampsData.timestamps;
+                        words = wordTimings.map(t => t.word);
+                        displayWords();
+                    }
+                } else {
+                    console.log('⚠️ Timestamps não encontrados');
+                    displayText(textData.text);
+                }
+
+            } catch (error) {
+                console.error('Erro ao carregar texto:', error);
+            }
+        }
+
+        function displaySentences(sentences) {
+            // Exibir frases com timestamps
+            wordTimings = sentences; // Reutilizar variável
+
+            const html = sentences.map((sentence, index) =>
+                `<span class="word" data-index="${index}" style="display: inline;">${sentence.text}. </span>`
+            ).join('');
+
+            textContent.innerHTML = html;
+            document.getElementById('wordCount').textContent = sentences.length + ' frases';
+
+            // Adicionar eventos de clique
+            document.querySelectorAll('.word').forEach(sentenceEl => {
+                sentenceEl.addEventListener('click', () => {
+                    const index = parseInt(sentenceEl.dataset.index);
+                    if (wordTimings[index]) {
+                        audio.currentTime = wordTimings[index].start;
+                    }
+                });
+            });
+
+            // Destacar primeira frase automaticamente ao carregar
+            setTimeout(() => {
+                const firstSentence = document.querySelector('[data-index="0"]');
+                if (firstSentence && !audio.paused === false) {
+                    firstSentence.classList.add('active');
+                    console.log('✅ Primeira frase destacada');
+                }
+            }, 100);
+        }
+
+        function displayWords() {
+            // Exibir palavras (modo antigo)
+            const html = words.map((word, index) =>
+                `<span class="word" data-index="${index}">${word}</span>`
+            ).join(' ');
+
+            textContent.innerHTML = html;
+            document.getElementById('wordCount').textContent = words.length;
+
+            document.querySelectorAll('.word').forEach(wordEl => {
+                wordEl.addEventListener('click', () => {
+                    const index = parseInt(wordEl.dataset.index);
+                    if (wordTimings[index]) {
+                        audio.currentTime = wordTimings[index].start;
+                    }
+                });
+            });
+        }
+
+        function estimateWordDuration(word) {
+            // Estimar duração baseada em sílabas e caracteres
+            const syllables = Math.max(1, Math.ceil(word.length / 3));
+            const baseTime = 0.3; // 300ms por sílaba base
+            return syllables * baseTime;
+        }
+
+        function displayText(text) {
+            // Dividir em palavras
+            words = text.split(/\s+/).filter(w => w.length > 0);
+
+            // Criar timings estimados
+            let currentTime = 0;
+            wordTimings = words.map(word => {
+                const duration = estimateWordDuration(word);
+                const timing = {
+                    start: currentTime,
+                    end: currentTime + duration,
+                    word: word
+                };
+                currentTime += duration;
+                return timing;
+            });
+
+            // Ajustar timings para duração real do áudio
+            audio.addEventListener('loadedmetadata', () => {
+                const totalEstimated = currentTime;
+                const actualDuration = audio.duration;
+                const scaleFactor = actualDuration / totalEstimated;
+
+                wordTimings = wordTimings.map(timing => ({
+                    ...timing,
+                    start: timing.start * scaleFactor,
+                    end: timing.end * scaleFactor
+                }));
+            });
+
+            // Criar HTML com palavras clicáveis
+            const html = words.map((word, index) =>
+                `<span class="word" data-index="${index}">${word}</span>`
+            ).join(' ');
+
+            textContent.innerHTML = html;
+            document.getElementById('wordCount').textContent = words.length;
+
+            // Adicionar eventos de clique nas palavras
+            document.querySelectorAll('.word').forEach(wordEl => {
+                wordEl.addEventListener('click', () => {
+                    const index = parseInt(wordEl.dataset.index);
+                    if (wordTimings[index]) {
+                        audio.currentTime = wordTimings[index].start;
+                    }
+                });
+            });
+        }
+
+        function togglePlay() {
+            if (audio.paused) {
+                audio.play();
+                playBtn.textContent = '⏸️';
+            } else {
+                audio.pause();
+                playBtn.textContent = '▶️';
+            }
+        }
+
+        function skipBackward() {
+            audio.currentTime = Math.max(0, audio.currentTime - 10);
+        }
+
+        function skipForward() {
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+        }
+
+        function setSpeed(speed) {
+            audio.playbackRate = speed;
+
+            // Atualizar UI
+            document.querySelectorAll('.speed-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+
+        function adjustOffset(delta) {
+            syncOffset += delta;
+            document.getElementById('offsetDisplay').textContent = syncOffset.toFixed(1) + 's';
+            console.log(`Offset ajustado para: ${syncOffset}s`);
+        }
+
+        function formatTime(seconds) {
+            if (!seconds || isNaN(seconds)) return "0:00";
+
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = Math.floor(seconds % 60);
+
+            const secsStr = secs.toString().padStart(2, '0');
+
+            if (hours > 0) {
+                const minsStr = minutes.toString().padStart(2, '0');
+                return `${hours}:${minsStr}:${secsStr}`;
+            }
+
+            return `${minutes}:${secsStr}`;
+        }
+
+        function findCurrentWord(currentTime) {
+            // Aplicar offset de sincronização
+            const adjustedTime = currentTime + syncOffset;
+
+            for (let i = 0; i < wordTimings.length; i++) {
+                if (adjustedTime >= wordTimings[i].start && adjustedTime < wordTimings[i].end) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        // Event listeners
+        audio.addEventListener('loadedmetadata', () => {
+            durationEl.textContent = formatTime(audio.duration);
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            const percent = (audio.currentTime / audio.duration) * 100;
+            progressFill.style.width = percent + '%';
+            currentTimeEl.textContent = formatTime(audio.currentTime);
+            document.getElementById('progressPercent').textContent = Math.floor(percent) + '%';
+
+            // Sincronizar palavra/frase com timings precisos
+            const wordIndex = findCurrentWord(audio.currentTime);
+
+            // Se não encontrou e está no início, destacar a primeira
+            const finalIndex = (wordIndex === -1 && audio.currentTime < 1.0) ? 0 : wordIndex;
+
+            if (finalIndex !== -1 && finalIndex !== currentWordIndex) {
+                // Remover destaque anterior
+                const prevWord = document.querySelector('.word.active');
+                if (prevWord) prevWord.classList.remove('active');
+
+                // Adicionar novo destaque
+                const currentWord = document.querySelector(`[data-index="${finalIndex}"]`);
+                if (currentWord) {
+                    currentWord.classList.add('active');
+                    currentWord.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+
+                currentWordIndex = finalIndex;
+            }
+        });
+
+        audio.addEventListener('ended', () => {
+            playBtn.textContent = '▶️';
+        });
+
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const percent = (e.clientX - rect.left) / rect.width;
+            audio.currentTime = percent * audio.duration;
+        });
+
+        // Atalhos de teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Space') {
+                e.preventDefault();
+                togglePlay();
+            } else if (e.code === 'ArrowLeft') {
+                e.preventDefault();
+                skipBackward();
+            } else if (e.code === 'ArrowRight') {
+                e.preventDefault();
+                skipForward();
+            }
+        });
+
+        // Carregar ao iniciar
+        loadJob();
+    </script>
+</body>
+
+</html>

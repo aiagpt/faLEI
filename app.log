@@ -1,0 +1,841 @@
+[2026-01-20T18:09:38.231Z] Iniciando servidor Python Flask...
+[2026-01-20T18:09:39.535Z] Flask Error: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:09:39.544Z] Flask Error: Traceback (most recent call last):
+
+[2026-01-20T18:09:39.545Z] Flask Error:   File "C:\Users\�gape\Desktop\VV\voz\app.py", line 7, in <module>
+    from services.tts_service import TTSService
+  File "C:\Users\�gape\Desktop\VV\voz\services\tts_service.py", line 34
+    print(f"[!] Voz '{voice_name}' desconhecida. Usando padrao.")
+IndentationError: unexpected indent
+
+[2026-01-20T18:09:44.643Z] Iniciando servidor Python Flask...
+[2026-01-20T18:09:45.897Z] Flask Error: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:09:45.909Z] Flask Error: Traceback (most recent call last):
+
+[2026-01-20T18:09:45.909Z] Flask Error:   File "C:\Users\�gape\Desktop\VV\voz\app.py", line 7, in <module>
+    from services.tts_service import TTSService
+  File "C:\Users\�gape\Desktop\VV\voz\services\tts_service.py", line 34
+    print(f"[!] Voz '{voice_name}' desconhecida. Usando padrao.")
+IndentationError: unexpected indent
+
+[2026-01-20T18:09:55.611Z] Iniciando servidor Python Flask...
+[2026-01-20T18:09:56.727Z] Flask Error: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:09:56.742Z] Flask Error: Traceback (most recent call last):
+  File "C:\Users\�gape\Desktop\VV\voz\app.py", line 7, in <module>
+    from services.tts_service import TTSService
+  File "C:\Users\�gape\Desktop\VV\voz\services\tts_service.py", line 34
+    print(f"[!] Voz '{voice_name}' desconhecida. Usando padrao.")
+IndentationError: unexpected indent
+
+[2026-01-20T18:10:37.981Z] Iniciando servidor Python Flask...
+[2026-01-20T18:10:39.092Z] Flask Error: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:10:39.211Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:10:39.235Z] Flask Error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:10:39.542Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:39] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:10:39.648Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:39] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:10:39.689Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:39] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:10:39.690Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:39] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:10:45.339Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:45] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:10:46.355Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:46] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-01-20T18:10:56.870Z] Iniciando servidor Python Flask...
+[2026-01-20T18:10:57.953Z] Flask Error: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:10:58.063Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:10:58.087Z] Flask Error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:10:58.539Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:58] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:10:58.569Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:10:58] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:11:00.601Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:11:00] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:11:01.622Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:11:01] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-01-20T18:12:16.892Z] Iniciando servidor Python Flask...
+[2026-01-20T18:12:17.915Z] Flask Error: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:12:18.027Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:12:18.050Z] Flask Error: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:12:18.523Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:12:18] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:12:18.607Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:12:18] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:12:27.864Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:12:27] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:12:28.885Z] Flask Error: 127.0.0.1 - - [20/Jan/2026 15:12:28] "GET /status/13 HTTP/1.1" 200 -
+
+[2026-01-20T18:19:53.744Z] Iniciando servidor Python Flask...
+[2026-01-20T18:19:55.249Z] Flask Log: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:19:55.363Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:19:55.389Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:19:55.905Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:19:55] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:19:55.986Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:19:55] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:20:03.654Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:20:03] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:20:04.668Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:20:04] "GET /status/14 HTTP/1.1" 200 -
+
+[2026-01-20T18:22:12.102Z] Iniciando servidor Python Flask...
+[2026-01-20T18:22:13.204Z] Flask Log: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:22:13.325Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:22:13.347Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:22:13.751Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:13] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:22:13.822Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:13] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:22:15.752Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:15] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:22:16.763Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:16] "GET /status/15 HTTP/1.1" 200 -
+
+[2026-01-20T18:22:23.694Z] Iniciando servidor Python Flask...
+[2026-01-20T18:22:25.375Z] Flask Log: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:22:25.507Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:22:25.534Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:22:25.847Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:25] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:22:25.935Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:25] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:22:28.419Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:28] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:22:29.436Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:29] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-01-20T18:22:42.609Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:42] "GET /history HTTP/1.1" 200 -
+
+[2026-01-20T18:22:42.660Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:42] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:22:49.305Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:49] "DELETE /delete/9 HTTP/1.1" 200 -
+
+[2026-01-20T18:22:49.316Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:22:49] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:28:40.701Z] Iniciando servidor Python Flask...
+[2026-01-20T18:28:41.724Z] Flask Log: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:28:41.832Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-01-20T18:28:41.835Z] Flask Log: Traceback (most recent call last):
+
+[2026-01-20T18:28:41.836Z] Flask Log:   File "C:\Users\�gape\Desktop\VV\voz\app.py", line 353, in <module>
+    resume_pending_jobs()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\�gape\Desktop\VV\voz\app.py", line 320, in resume_pending_jobs
+    print(f"\n\U0001f504 Encontrados {len(pending)} job(s) pendente(s). Retomando...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\�gape\AppData\Local\Python\pythoncore-3.14-64\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f504' in position 2: character maps to <undefined>
+
+[2026-01-20T18:31:20.111Z] Iniciando servidor Python Flask...
+[2026-01-20T18:31:21.241Z] Flask Log: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:31:21.341Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[INFO] Encontrados 1 job(s) pendente(s). Retomando...
+   -> Retomando Job #17: https://www3.al.es.gov.br/Arquivo/Documents/legislacao/html/LO6200.html
+
+Pressione Ctrl+C para parar o servidor
+
+[Job 17] Retomando da etapa: humanizing
+ * Serving Flask app 'app'
+
+[2026-01-20T18:31:21.343Z] Flask Output:  * Debug mode: on
+
+[2026-01-20T18:31:21.369Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:31:21.757Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:31:21] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:31:21.855Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:31:21] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:31:24.536Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:31:24] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:31:25.547Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:31:25] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-01-20T18:31:32.374Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI ---
+[X] Erro ao processar HTML: 'charmap' codec can't encode character '\U0001f4e5' in position 2: character maps to <undefined>
+Texto humanizado com sucesso!
+\n--- PROCESSANDO �UDIO ---
+Texto dividido em 4 partes para s�ntese.
+
+[2026-01-20T18:31:32.376Z] Flask Log: Gerando �udio:   0%|          | 0/4 [00:00<?, ?parte/s]
+[2026-01-20T18:31:35.343Z] Flask Log: Gerando �udio:  25%|##5       | 1/4 [00:02<00:08,  2.97s/parte]
+[2026-01-20T18:31:38.759Z] Flask Log: Gerando �udio:  50%|#####     | 2/4 [00:06<00:06,  3.23s/parte]
+[2026-01-20T18:31:41.805Z] Flask Log: Gerando �udio:  75%|#######5  | 3/4 [00:09<00:03,  3.15s/parte]
+[2026-01-20T18:31:42.885Z] Flask Log: Gerando �udio: 100%|##########| 4/4 [00:10<00:00,  2.33s/parte]Gerando �udio: 100%|##########| 4/4 [00:10<00:00,  2.63s/parte]
+
+[2026-01-20T18:50:20.070Z] Iniciando servidor Python Flask...
+[2026-01-20T18:50:21.669Z] Flask Log: C:\Users\�gape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:50:21.819Z] Flask Output: ============================================================
+SISTEMA DE CONVERS�O DE LEIS PARA �UDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:50:21.846Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:50:22.256Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:50:22] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:50:22.347Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:50:22] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:51:10.636Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:51:10] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:51:11.660Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:51:11] "GET /status/19 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:00.897Z] Iniciando servidor Python Flask...
+[2026-01-20T18:53:02.118Z] Flask Log: C:\Users\Ágape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:53:02.247Z] Flask Output: ============================================================
+SISTEMA DE CONVERSÃO DE LEIS PARA ÁUDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:53:02.272Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:53:02.556Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:02] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:53:02.641Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:02] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:53:24.898Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:24] "POST /process HTTP/1.1" 200 -
+
+[2026-01-20T18:53:25.917Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:25] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:26.914Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:26] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:27.910Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:27] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:28.907Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:28] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:29.903Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:29] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:30.904Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:30] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:31.911Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:31] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:32.904Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:32] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:33.912Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:33] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:34.904Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:34] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:35.917Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:35] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:36.917Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:36] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:39.443Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:39] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:39.447Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:39] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:39.915Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:39] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:40.907Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:40] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:41.903Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:41] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:42.928Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:42] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:43.913Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:43] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:44.902Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:44] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:45.906Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:45] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:46.903Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:46] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:47.903Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:47] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:48.828Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 5 partes para síntese.
+
+[2026-01-20T18:53:48.829Z] Flask Log: Gerando áudio:   0%|          | 0/5 [00:00<?, ?parte/s]
+[2026-01-20T18:53:48.908Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:48] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:49.903Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:49] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:50.908Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:50] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:51.902Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:51] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:52.904Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:52] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:53.374Z] Flask Log: Gerando áudio:  20%|██        | 1/5 [00:04<00:18,  4.55s/parte]
+[2026-01-20T18:53:53.909Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:53] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:54.908Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:54] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:55.904Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:55] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:56.036Z] Flask Log: Gerando áudio:  40%|████      | 2/5 [00:07<00:10,  3.44s/parte]
+[2026-01-20T18:53:56.905Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:56] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:57.915Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:57] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:58.690Z] Flask Log: Gerando áudio:  60%|██████    | 3/5 [00:09<00:06,  3.08s/parte]
+[2026-01-20T18:53:58.910Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:58] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:53:59.907Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:53:59] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:54:00.879Z] Flask Log: Gerando áudio:  80%|████████  | 4/5 [00:12<00:02,  2.73s/parte]
+[2026-01-20T18:54:00.909Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:54:00] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:54:01.904Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:54:01] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:54:02.755Z] Flask Log: Gerando áudio: 100%|██████████| 5/5 [00:13<00:00,  2.42s/parte]
+[2026-01-20T18:54:02.758Z] Flask Log: Gerando áudio: 100%|██████████| 5/5 [00:13<00:00,  2.79s/parte]
+
+[2026-01-20T18:54:02.914Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:54:02] "GET /status/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:54:05.059Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:54:05] "GET /download_zip/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:54:17.898Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:54:17] "GET /download_zip/20 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:25.994Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:25] "GET /history HTTP/1.1" 200 -
+
+[2026-01-20T18:55:26.023Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:26] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:55:39.715Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:39] "DELETE /delete/10 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:39.726Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:39] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:55:42.000Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:42] "DELETE /delete/11 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:42.012Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:42] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:55:43.696Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:43] "DELETE /delete/12 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:43.710Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:43] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:55:46.737Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:46] "DELETE /delete/13 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:46.747Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:46] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:55:48.476Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:48] "DELETE /delete/14 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:48.489Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:48] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:55:50.593Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:50] "DELETE /delete/15 HTTP/1.1" 200 -
+
+[2026-01-20T18:55:50.603Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:55:50] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:56:34.814Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:34] "DELETE /delete/16 HTTP/1.1" 200 -
+
+[2026-01-20T18:56:34.828Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:34] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:56:38.023Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:38] "DELETE /delete/18 HTTP/1.1" 200 -
+
+[2026-01-20T18:56:38.033Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:38] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:56:40.048Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:40] "DELETE /delete/19 HTTP/1.1" 200 -
+
+[2026-01-20T18:56:40.061Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:40] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:56:58.428Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:56:58] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:57:02.671Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:02] "GET /history HTTP/1.1" 200 -
+
+[2026-01-20T18:57:02.692Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:02] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:57:17.890Z] Iniciando servidor Python Flask...
+[2026-01-20T18:57:18.956Z] Flask Log: C:\Users\Ágape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-20T18:57:19.078Z] Flask Output: ============================================================
+SISTEMA DE CONVERSÃO DE LEIS PARA ÁUDIO - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-20T18:57:19.098Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-20T18:57:19.570Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:19] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:57:19.631Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:19] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:57:21.415Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:21] "GET /history HTTP/1.1" 200 -
+
+[2026-01-20T18:57:21.439Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:21] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T18:57:27.240Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:27] "GET / HTTP/1.1" 200 -
+
+[2026-01-20T18:57:29.882Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:29] "GET /history HTTP/1.1" 200 -
+
+[2026-01-20T18:57:29.906Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 15:57:29] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-20T19:04:03.996Z] Flask Access: 127.0.0.1 - - [20/Jan/2026 16:04:03] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:10:13.553Z] Iniciando servidor Python Flask...
+[2026-01-21T17:10:29.645Z] Flask Log: C:\Users\Ágape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-21T17:10:30.252Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-21T17:10:30.487Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+
+[2026-01-21T17:10:30.509Z] Flask Log: Press CTRL+C to quit
+
+[2026-01-21T17:10:30.802Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:10:30] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:10:31.256Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:10:31] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:10:52.062Z] Iniciando servidor Python Flask...
+[2026-01-21T17:10:55.059Z] Flask Log: C:\Users\Ágape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-21T17:10:55.420Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-21T17:10:55.488Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-21T17:10:55.813Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:10:55] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:10:56.067Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:10:56] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:11:01.346Z] Iniciando servidor Python Flask...
+[2026-01-21T17:11:01.637Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:11:01] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:11:01.853Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:11:01] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:11:04.915Z] Flask Log: C:\Users\Ágape\Desktop\VV\voz\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-01-21T17:11:05.184Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-01-21T17:11:05.264Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-01-21T17:12:57.888Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:12:57] "GET /history HTTP/1.1" 200 -
+
+[2026-01-21T17:12:58.218Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:12:58] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-21T17:13:00.274Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:13:00] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:14:18.254Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:14:18] "GET /history HTTP/1.1" 200 -
+
+[2026-01-21T17:14:18.293Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:14:18] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-21T17:14:21.019Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:14:21] "GET / HTTP/1.1" 200 -
+
+[2026-01-21T17:15:10.387Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:10] "POST /process HTTP/1.1" 200 -
+
+[2026-01-21T17:15:11.396Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:11] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:12.410Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:12] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:13.403Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:13] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:14.397Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:14] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:15.400Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:15] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:16.404Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:16] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:17.399Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:17] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:18.398Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:18] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:19.409Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:19] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:20.394Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:20] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:21.398Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:21] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:22.401Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:22] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:23.409Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:23] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:24.395Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:24] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:25.401Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:25] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:26.411Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:26] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:27.395Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:27] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:28.399Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:28] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:29.063Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 6 partes para síntese.
+
+[2026-01-21T17:15:29.064Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-01-21T17:15:29.417Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:29] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:30.393Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:30] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:31.400Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:31] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:32.007Z] Flask Log: Gerando áudio:  17%|█▋        | 1/6 [00:02<00:14,  2.94s/parte]
+[2026-01-21T17:15:32.404Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:32] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:33.403Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:33] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:34.239Z] Flask Log: Gerando áudio:  33%|███▎      | 2/6 [00:05<00:10,  2.53s/parte]
+[2026-01-21T17:15:34.403Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:34] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:35.407Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:35] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:36.042Z] Flask Log: Gerando áudio:  50%|█████     | 3/6 [00:06<00:06,  2.20s/parte]
+[2026-01-21T17:15:36.399Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:36] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:37.404Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:37] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:38.399Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:38] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:38.472Z] Flask Log: Gerando áudio:  67%|██████▋   | 4/6 [00:09<00:04,  2.29s/parte]
+[2026-01-21T17:15:39.395Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:39] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:40.402Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:40] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:40.579Z] Flask Log: Gerando áudio:  83%|████████▎ | 5/6 [00:11<00:02,  2.22s/parte]
+[2026-01-21T17:15:41.406Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:41] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:42.358Z] Flask Log: Gerando áudio: 100%|██████████| 6/6 [00:13<00:00,  2.07s/parte]Gerando áudio: 100%|██████████| 6/6 [00:13<00:00,  2.22s/parte]
+
+[2026-01-21T17:15:42.395Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:42] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:43.410Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:43] "GET /status/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:15:45.764Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:15:45] "GET /download_zip/21 HTTP/1.1" 200 -
+
+[2026-01-21T17:18:10.438Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:18:10] "GET /history HTTP/1.1" 200 -
+
+[2026-01-21T17:18:10.468Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:18:10] "GET /jobs HTTP/1.1" 200 -
+
+[2026-01-21T17:18:21.076Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:18:21] "GET / HTTP/1.1" 200 -
+

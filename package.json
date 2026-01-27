@@ -1,0 +1,14 @@
+{
+    "name": "lei-para-audio-desktop",
+    "version": "1.0.0",
+    "description": "Aplicativo Desktop para conversão de Leis em Áudio",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "author": "Ágape",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^28.0.0"
+    }
+}

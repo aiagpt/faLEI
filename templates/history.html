@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico - Conversor de Leis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f3f4f6;
+            color: #1f2937;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px 25px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: #111827;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .back-link {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #1e3a8a;
+        }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .search-box {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 15px 12px 40px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: #1e3a8a;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+        }
+
+        .btn-clear {
+            padding: 0 20px;
+            background: white;
+            border: 1px solid #ef4444;
+            color: #ef4444;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-clear:hover {
+            background: #fef2f2;
+        }
+
+        /* Jobs Grid */
+        .jobs-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .job-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f3f4f6;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .job-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: 600;
+            color: #111827;
+            font-size: 1rem;
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+
+        .job-url {
+            color: #6b7280;
+            font-size: 0.85rem;
+            word-break: break-all;
+        }
+
+        .status-badge {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-complete {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .status-processing {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .status-error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .status-pending {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .job-meta {
+            font-size: 0.85rem;
+            color: #9ca3af;
+            margin-bottom: 15px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .job-buttons {
+            display: flex;
+            gap: 10px;
+            border-top: 1px solid #f3f4f6;
+            padding-top: 15px;
+        }
+
+        .action-btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+        }
+
+        .btn-download {
+            background: #1e3a8a;
+            color: white;
+        }
+
+        .btn-download:hover {
+            background: #1e40af;
+        }
+
+        .btn-retry {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .btn-retry:hover {
+            background: #d97706;
+        }
+
+        .btn-delete {
+            background: white;
+            border: 1px solid #e5e7eb;
+            color: #4b5563;
+            margin-left: auto;
+        }
+
+        .btn-delete:hover {
+            background: #f3f4f6;
+            color: #ef4444;
+            border-color: #fecaca;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px;
+            color: #9ca3af;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📜 Histórico</h1>
+            <a href="/" class="back-link">← Voltar</a>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" class="search-input" placeholder="Pesquisar por URL ou ID..."
+                    onkeyup="filterJobs()">
+            </div>
+
+        </div>
+
+        <div id="jobsList" class="jobs-list">
+            <div class="empty-state">Carregando...</div>
+        </div>
+    </div>
+
+    <script>
+        let allJobs = [];
+
+        async function loadJobs() {
+            try {
+                const response = await fetch('/jobs');
+                allJobs = await response.json();
+                renderJobs(allJobs);
+            } catch (error) {
+                console.error('Erro:', error);
+            }
+        }
+
+        function renderJobs(jobs) {
+            const list = document.getElementById('jobsList');
+            if (jobs.length === 0) {
+                list.innerHTML = '<div class="empty-state">Nenhum processamento no histórico.</div>';
+                return;
+            }
+
+            list.innerHTML = jobs.map(job => {
+                const statusInfo = getStatusInfo(job.status);
+                const timeAgo = getTimeAgo(new Date(job.created_at));
+
+                return `
+                <div class="job-card" data-url="${job.url.toLowerCase()}" data-id="${job.id}">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Job #${job.id}</div>
+                            <div class="job-url">${job.url}</div>
+                        </div>
+                        <span class="status-badge ${statusInfo.class}">${statusInfo.text}</span>
+                    </div>
+                    
+                    <div class="job-meta">
+                        <span>🕒 ${timeAgo}</span>
+                        ${job.message ? `<span>• ${job.message}</span>` : ''}
+                    </div>
+
+                    <div class="job-buttons">
+                        ${getButtons(job)}
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        function getStatusInfo(status) {
+            switch (status) {
+                case 'complete': return { class: 'status-complete', text: 'Concluído' };
+                case 'error': return { class: 'status-error', text: 'Erro' };
+                case 'pending': return { class: 'status-pending', text: 'Pendente' };
+                default: return { class: 'status-processing', text: 'Processando' };
+            }
+        }
+
+        function getButtons(job) {
+            let btns = '';
+            if (job.status === 'complete' && job.filename) {
+                btns += `<button class="action-btn btn-download" onclick="download(${job.id})">📥 Baixar ZIP</button>`;
+            }
+            if (job.status === 'error') {
+                btns += `<button class="action-btn btn-retry" onclick="resume(${job.id})">🔄 Tentar Novamente</button>`;
+            }
+            btns += `<button class="action-btn btn-delete" onclick="deleteJob(${job.id})">Deletar</button>`;
+            return btns;
+        }
+
+        function filterJobs() {
+            const term = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = allJobs.filter(job =>
+                job.url.toLowerCase().includes(term) ||
+                job.id.toString().includes(term)
+            );
+            renderJobs(filtered);
+        }
+
+
+
+        async function deleteJob(id) {
+            if (!confirm('Apagar este registro?')) return;
+            await fetch(`/delete/${id}`, { method: 'DELETE' });
+            loadJobs();
+        }
+
+        function download(id) { window.location.href = `/download_zip/${id}`; }
+        async function resume(id) { await fetch(`/resume/${id}`, { method: 'POST' }); loadJobs(); }
+
+        function getTimeAgo(date) {
+            const seconds = Math.floor((new Date() - date) / 1000);
+            if (seconds < 60) return 'Agora';
+            const minutes = Math.floor(seconds / 60);
+            if (minutes < 60) return `há ${minutes} min`;
+            const hours = Math.floor(minutes / 60);
+            if (hours < 24) return `há ${hours} horas`;
+            return date.toLocaleDateString('pt-BR');
+        }
+
+        loadJobs();
+        // Auto refresh se houver jobs ativos
+        setInterval(() => {
+            if (allJobs.some(j => !['complete', 'error'].includes(j.status))) loadJobs();
+        }, 3000);
+    </script>
+</body>
+
+</html>

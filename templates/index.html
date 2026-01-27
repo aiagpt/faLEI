@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faLei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e293b;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #64748b;
+            font-weight: 400;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e2e8f0;
+        }
+
+        .input-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .input-label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            color: #475569;
+        }
+
+        input[type="url"] {
+            width: 100%;
+            padding: 16px;
+            font-size: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            outline: none;
+            transition: all 0.2s;
+            background: #f8fafc;
+        }
+
+        input[type="url"]:focus {
+            border-color: #3b82f6;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 18px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+
+        .btn-primary:active:not(:disabled) {
+            transform: translateY(0);
+        }
+
+        .btn-primary:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        .btn-download {
+            background: #10b981;
+            color: white;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .btn-download:hover {
+            background: #059669;
+        }
+
+        .btn-download.active {
+            display: block;
+        }
+
+        /* Progress Bar */
+        .progress-box {
+            display: none;
+            margin-top: 25px;
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .progress-box.active {
+            display: block;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #64748b;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #2563eb;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .status-text {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        /* Error */
+        .error-msg {
+            display: none;
+            margin-top: 20px;
+            padding: 12px;
+            background: #fef2f2;
+            color: #ef4444;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            border: 1px solid #fee2e2;
+        }
+
+        .error-msg.active {
+            display: block;
+        }
+
+        .footer-link {
+            display: inline-block;
+            margin-top: 30px;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <span class="logo">⚖️</span>
+            <h1>Leis para Áudio</h1>
+            <p class="subtitle">Transforme textos legislativos em áudio humanizado.</p>
+        </div>
+
+        <div class="card">
+            <div class="input-group">
+                <label class="input-label" for="url">Cole a URL da Lei (.html)</label>
+                <input type="url" id="url" placeholder="https://..." autofocus required>
+            </div>
+
+            <button class="btn btn-primary" id="processBtn" onclick="processLaw()">
+                Converter para Áudio
+            </button>
+
+            <div class="progress-box" id="progressContainer">
+                <div class="progress-header">
+                    <span>Processando</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="status-text" id="statusMessage">Iniciando...</div>
+            </div>
+
+            <button class="btn btn-download" id="downloadBtn" onclick="downloadAudio()">
+                📥 Baixar ZIP (Áudio + Texto)
+            </button>
+
+            <div class="error-msg" id="errorMessage"></div>
+        </div>
+
+        <a href="/history" class="footer-link">Ver Histórico de Processamentos →</a>
+    </div>
+
+    <script>
+        let currentJobId = null;
+        let statusInterval = null;
+
+        async function processLaw() {
+            const url = document.getElementById('url').value.trim();
+
+            if (!url) {
+                showError('Por favor, informe a URL da lei.');
+                return;
+            }
+
+            // Reset UI
+            document.getElementById('processBtn').disabled = true;
+            document.getElementById('processBtn').textContent = 'Processando...';
+            document.getElementById('progressContainer').classList.add('active');
+            document.getElementById('downloadBtn').classList.remove('active');
+            document.getElementById('errorMessage').classList.remove('active');
+
+            try {
+                const response = await fetch('/process', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url })
+                });
+
+                if (!response.ok) {
+                    const data = await response.json();
+                    throw new Error(data.error || 'Falha ao iniciar processamento');
+                }
+
+                const data = await response.json();
+                currentJobId = data.job_id;
+                statusInterval = setInterval(checkStatus, 1000);
+
+            } catch (error) {
+                showError(error.message);
+                resetUI();
+            }
+        }
+
+        async function checkStatus() {
+            if (!currentJobId) return;
+
+            try {
+                const response = await fetch(`/status/${currentJobId}`);
+                if (!response.ok) throw new Error('Erro de conexão');
+
+                const job = await response.json();
+
+                document.getElementById('progressFill').style.width = job.progress + '%';
+                document.getElementById('progressPercent').textContent = job.progress + '%';
+                document.getElementById('statusMessage').textContent = job.message;
+
+                if (job.status === 'complete') {
+                    finishJob();
+                } else if (job.status === 'error') {
+                    clearInterval(statusInterval);
+                    showError(job.message || job.error);
+                    resetUI();
+                }
+
+            } catch (error) {
+                console.error(error);
+                // Não para o intervalo imediatamente em erro de rede, tenta de novo
+            }
+        }
+
+        function finishJob() {
+            clearInterval(statusInterval);
+            document.getElementById('statusMessage').textContent = 'Concluído!';
+            document.getElementById('progressFill').style.background = '#10b981';
+            document.getElementById('downloadBtn').classList.add('active');
+
+            // Restore button state
+            const btn = document.getElementById('processBtn');
+            btn.disabled = false;
+            btn.textContent = 'Converter Outra Lei';
+        }
+
+        function downloadAudio() {
+            if (currentJobId) window.location.href = `/download_zip/${currentJobId}`;
+        }
+
+        function showError(msg) {
+            const el = document.getElementById('errorMessage');
+            el.textContent = msg;
+            el.classList.add('active');
+        }
+
+        function resetUI() {
+            clearInterval(statusInterval);
+            const btn = document.getElementById('processBtn');
+            btn.disabled = false;
+            btn.textContent = 'Converter para Áudio';
+            document.getElementById('progressContainer').classList.remove('active');
+        }
+
+        // Enter key to submit
+        document.getElementById('url').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') processLaw();
+        });
+    </script>
+</body>
+
+</html>
