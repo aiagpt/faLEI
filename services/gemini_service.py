@@ -1,6 +1,7 @@
 import time
 from typing import Optional, List
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from tqdm import tqdm
 
 from config.settings import settings
@@ -17,11 +18,10 @@ class GeminiService:
     
     def __init__(self):
         self.api_key = settings.gemini_api_key
-        self.model = None
+        self.client = None
         
         if self.api_key and self.api_key != "SUA_CHAVE_AQUI":
-            genai.configure(api_key=self.api_key)
-            self.model = genai.GenerativeModel(GEMINI_MODEL)
+            self.client = genai.Client(api_key=self.api_key)
     
     def humanizar_texto(self, texto_bruto: str) -> Optional[str]:
         """
@@ -33,70 +33,135 @@ class GeminiService:
         Returns:
             Texto humanizado ou None em caso de erro
         """
-        if not self.model:
+        if not self.client:
             print("\n[AVISO] GEMINI_API_KEY não configurada. Pulando humanização...")
             return texto_bruto
         
         print("\n--- HUMANIZANDO TEXTO COM GEMINI ---")
         
         prompt = """
-        ATUE COMO UM NARRADOR DE AUDIOLIVROS JURÍDICOS.
-        Sua tarefa é PREPARAR o texto abaixo para locução, expandindo abreviações para leitura fluida.
+        Você é um NARRADOR PROFISSIONAL DE AUDIOLIVROS JURÍDICOS, especializado em transformar textos legais formais em versões preparadas para locução clara, solene e fluida.
 
-        ENTRADA: Texto jurídico (Lei, Artigo, etc).
-        SAÍDA: O MESMO texto, mas com as abreviações expandidas por extenso.
-        
-        REGRAS CRÍTICAS (Siga estritamente):
-        1. NÃO RESUMA. NÃO EXPLIQUE. NÃO COMENTE. A saída deve ter o MESMO TAMANHO da entrada (exceto pelas expansões).
-        2. Mantenha TODOS os artigos, parágrafos e incisos. Se o texto for longo, processe TUDO até o final.
-        
-        DIRETRIZES DE LEITURA (Humanização):
-        - Abreviaturas: Expanda TODAS.
-          * "Art." -> "Artigo"
-          * "§" -> "Parágrafo"
-          * "inc." -> "inciso"
-          * "al." -> "alínea"
-          * "nº" -> "número"
-        
-        - Aspas: Substitua aspas visuais por narração.
-          * "texto" -> "abre aspas, texto, fecha aspas"
-          * 'texto' -> "abre aspas, texto, fecha aspas"
-        
-        - Números:
-          * Cardinais (1, 2, 100): Leia normalmente ("um", "dois", "cem"). 
-          * Ordinais (1º, 2º): "primeiro", "segundo".
-          * Leis/Decretos: "Lei 8.666" -> "Lei oito mil seiscentos e sessenta e seis".
-          * Cifras (R$): "R$ 1.000,00" -> "mil reais".
-        
-        - Estrutura:
-          * Mantenha a pontuação original onde possível para preservar o ritmo jurídico.
-        
-        TEXTO PARA PREPARAR:
-        """
+OBJETIVO:
+Converter o texto jurídico fornecido em uma versão pronta para narração, expandindo todas as abreviações, símbolos e elementos gráficos para sua forma por extenso, mantendo rigorosamente o conteúdo original.
+
+ENTRADA:
+Texto jurídico completo (Lei, Decreto, Artigo, Código etc.).
+
+SAÍDA:
+O MESMO texto integral, sem cortes, sem resumos e sem comentários adicionais, apenas com as adaptações necessárias para leitura em voz alta.
+
+REGRAS OBRIGATÓRIAS:
+1. NÃO resumir.
+2. NÃO explicar.
+3. NÃO interpretar.
+4. NÃO omitir nenhuma parte.
+5. Processar o texto até o final, independentemente do tamanho.
+6. Manter a estrutura original (artigos, parágrafos, incisos, alíneas).
+7. A saída deve ter o mesmo conteúdo da entrada, alterando apenas o necessário para leitura fluida.
+8. Sempre que houver numeração em algarismos romanos isolados (I, II, III, IV, V, VI, VII, VIII, IX, X, etc.), preceder obrigatoriamente pela palavra "inciso".
+9. SUBSTITUIR qualquer traço, hífen ou marcador após incisos por ponto final.
+10. Cada inciso deve terminar com ponto final, nunca com traço.
+
+EXPANSÃO OBRIGATÓRIA:
+
+1) Abreviações:
+- "Art." → "Artigo"
+- "§" → "Parágrafo"
+- "inc." → "inciso"
+- "al." → "alínea"
+- "nº" ou "n." → "número"
+- "CF" → "Constituição Federal"
+- Expandir qualquer outra abreviação existente.
+
+2) Incisos em algarismos romanos:
+- I → inciso primeiro.
+- II → inciso segundo.
+- III → inciso terceiro.
+- IV → inciso quarto.
+- V → inciso quinto.
+- VI → inciso sexto.
+- VII → inciso sétimo.
+- VIII → inciso oitavo.
+- IX → inciso nono.
+- X → inciso décimo.
+- Continuar a conversão ordinal corretamente para quaisquer outros numerais romanos.
+- Após cada inciso convertido, utilizar ponto final, nunca traço.
+
+3) Aspas:
+- "texto" → abre aspas, texto, fecha aspas.
+- 'texto' → abre aspas, texto, fecha aspas.
+
+4) Números:
+- Cardinais (1, 25, 300) → por extenso.
+- Ordinais (1º, 2º, 3ª) → primeiro, segundo, terceira.
+- Leis e Decretos (Lei 8.666/93) → Lei oito mil seiscentos e sessenta e seis, de mil novecentos e noventa e três.
+- Valores monetários (R$ 1.000,00) → mil reais.
+- Datas → por extenso.
+
+5) Símbolos:
+- % → por cento.
+- & → e.
+- / → barra (quando necessário para clareza formal).
+
+ESTILO:
+- Manter a pontuação original sempre que possível.
+- Preservar formalidade e ritmo jurídico.
+- Garantir fluidez sonora.
+- Não alterar termos técnicos.
+
+FORMATO FINAL:
+Entregar apenas o texto convertido, sem introduções, sem comentários e sem marcações adicionais.
+
+TEXTO PARA CONVERTER:
+
+[INSERIR TEXTO AQUI]
+"""
         
         try:
-            # Texto grande: dividir em chunks
+            
             if len(texto_bruto) > MAX_CHARS_GEMINI:
                 return self._processar_chunks(texto_bruto, prompt)
             else:
-                # Texto pequeno: processar de uma vez COM RETRY
                 for tentativa in range(MAX_RETRIES_GEMINI):
                     try:
-                        response = self.model.generate_content(f"{prompt}\n{texto_bruto}")
+                        response = self.client.models.generate_content(
+                            model=GEMINI_MODEL,
+                            contents=f"{prompt}\n{texto_bruto}"
+                        )
                         print("Texto humanizado com sucesso!")
                         return response.text.strip()
                     except Exception as e:
                         if "429" in str(e) and tentativa < MAX_RETRIES_GEMINI - 1:
                             wait_time = (2 ** tentativa) * 2
-                            print(f"\n  ⚠ Cota excedida, aguardando {wait_time}s... (Tentativa {tentativa + 1}/{MAX_RETRIES_GEMINI})")
+                            print(f"\n  Cota excedida, aguardando {wait_time}s... (Tentativa {tentativa + 1}/{MAX_RETRIES_GEMINI})")
                             time.sleep(wait_time)
                         elif tentativa < MAX_RETRIES_GEMINI - 1:
                             wait_time = 2
-                            print(f"\n  ⚠ Erro transiente ({e}), tentando novamente em {wait_time}s...")
+                            print(f"\n  Erro transiente ({e}), tentando novamente em {wait_time}s...")
                             time.sleep(wait_time)
-                        else:
-                            print(f"\n[ERRO] Falha no Gemini após {MAX_RETRIES_GEMINI} tentativas: {e}")
+                        elif "404" in str(e):
+                            print(f"\n[ERRO] Modelo nao encontrado: {e}")
                             raise e
+                        elif "401" in str(e):
+                            print(f"\n[ERRO] Chave de API invalida: {e}")
+                            raise e
+                        elif "403" in str(e):
+                            print(f"\n[ERRO] Acesso negado: {e}")
+                            raise e
+                        elif "500" in str(e):
+                            print(f"\n[ERRO] Erro interno do servidor: {e}")
+                            raise e
+                        elif "503" in str(e):
+                            print(f"\n[ERRO] Servico indisponivel: {e}")
+                            raise e
+                        elif "504" in str(e):
+                            print(f"\n[ERRO] Gateway timeout: {e}")
+                            raise e 
+                        else:
+                            print(f"\n[ERRO] Falha no Gemini apos {MAX_RETRIES_GEMINI} tentativas: {e}")
+                            raise e
+
                 return None
                 
         except Exception as e:
@@ -115,10 +180,13 @@ class GeminiService:
             # Retry logic com exponential backoff
             for tentativa in range(MAX_RETRIES_GEMINI):
                 try:
-                    response = self.model.generate_content(f"{prompt}\n{chunk}")
+                    response = self.client.models.generate_content(
+                        model=GEMINI_MODEL,
+                        contents=f"{prompt}\n{chunk}"
+                    )
                     textos_humanizados.append(response.text.strip())
                     
-                    # Rate limiting
+
                     if i < len(chunks):
                         time.sleep(RATE_LIMIT_DELAY)
                     break
@@ -126,7 +194,7 @@ class GeminiService:
                 except Exception as e:
                     if tentativa < MAX_RETRIES_GEMINI - 1:
                         wait_time = (2 ** tentativa) * 2
-                        print(f"\n  ⚠ Erro na parte {i}, tentativa {tentativa + 1}/{MAX_RETRIES_GEMINI}. Aguardando {wait_time}s...")
+                        print(f"\n  Erro na parte {i}, tentativa {tentativa + 1}/{MAX_RETRIES_GEMINI}. Aguardando {wait_time}s...")
                         time.sleep(wait_time)
                     else:
                         print(f"\n  [X] Falha definitiva na parte {i}: {e}")
