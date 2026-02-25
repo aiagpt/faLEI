@@ -33,6 +33,9 @@ venv.bak/
 
 # Project Specific
 key.json
+api.json
+*.json.credentials
+app.log
 jobs/
 jobs.db
 *.mp3

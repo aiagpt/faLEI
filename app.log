@@ -839,3 +839,1755 @@ Texto dividido em 6 partes para síntese.
 
 [2026-01-21T17:18:21.076Z] Flask Access: 127.0.0.1 - - [21/Jan/2026 14:18:21] "GET / HTTP/1.1" 200 -
 
+[2026-02-25T16:44:25.018Z] Iniciando servidor Python Flask...
+[2026-02-25T16:44:25.024Z] ERRO: Python não encontrado em: C:\Users\Ágape\Desktop\faLEI\.venv\Scripts\python.exe
+[2026-02-25T16:47:22.658Z] Iniciando servidor Python Flask...
+[2026-02-25T16:47:30.130Z] Flask Log: C:\Users\Ágape\Desktop\faLEI\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-02-25T16:47:30.917Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-25T16:47:31.005Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.42:5000
+Press CTRL+C to quit
+
+[2026-02-25T16:47:31.511Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:47:31] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:47:31.550Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:47:31] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:47:35.034Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:47:35] "GET /history HTTP/1.1" 200 -
+
+[2026-02-25T16:47:35.046Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:47:35] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T16:47:37.099Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:47:37] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:48:25.558Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:25] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T16:48:26.580Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:26] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:27.575Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:27] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:28.567Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:28] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:29.579Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:29] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:30.567Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:30] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:31.575Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:31] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:32.958Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:32] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:33.952Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:33] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:34.967Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:34] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:35.796Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:35] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:36.569Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:36] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:37.568Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:37] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:38.567Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:38] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:39.564Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:39] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:40.585Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:40] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:41.588Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:41] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:42.578Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:42] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:43.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:43] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:44.960Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:44] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:45.962Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:45] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:48:46.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:48:46] "GET /status/1 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:09.001Z] Iniciando servidor Python Flask...
+[2026-02-25T16:49:09.820Z] Flask Log: C:\Users\Ágape\Desktop\faLEI\services\gemini_service.py:3: FutureWarning: 
+
+All support for the `google.generativeai` package has ended. It will no longer be receiving 
+updates or bug fixes. Please switch to the `google.genai` package as soon as possible.
+See README for more details:
+
+https://github.com/google-gemini/deprecated-generative-ai-python/blob/main/README.md
+
+  import google.generativeai as genai
+
+[2026-02-25T16:49:10.072Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-25T16:49:10.091Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.42:5000
+Press CTRL+C to quit
+
+[2026-02-25T16:49:10.117Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:10] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:49:10.171Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:10] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:49:14.797Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:14] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T16:49:15.806Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:15] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:16.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:16] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:17.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:17] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:18.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:18] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:19.806Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:19] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:20.968Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:20] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:21.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:21] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:22.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:22] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:23.960Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:23] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:24.957Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:24] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:26.018Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:26] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:26.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:26] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:27.960Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:27] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:28.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:28] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:29.959Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:29] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:30.957Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:30] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:31.955Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:31] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:33.019Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:33] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:33.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:33] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:34.806Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:34] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:35.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:35] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:49:36.833Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:49:36] "GET /status/2 HTTP/1.1" 200 -
+
+[2026-02-25T16:51:42.529Z] Iniciando servidor Python Flask...
+[2026-02-25T16:51:42.647Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:51:42] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:51:42.684Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:51:42] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T16:51:49.473Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-25T16:51:49.491Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.42:5000
+Press CTRL+C to quit
+
+[2026-02-25T16:52:30.812Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:30] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T16:52:31.830Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:31] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:32.825Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:32] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:33.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:33] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:34.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:34] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:35.830Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:35] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:36.827Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:36] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:37.833Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:37] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:38.831Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:38] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:39.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:39] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:40.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:40] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:41.826Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:41] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:42.824Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:42] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:43.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:43] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:44.833Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:44] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:45.825Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:45] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:46.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:46] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:47.817Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:47] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:48.829Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:48] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:49.831Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:49] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:50.826Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:50] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T16:52:51.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 13:52:51] "GET /status/3 HTTP/1.1" 200 -
+
+[2026-02-25T17:05:50.977Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:05:50] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:05:57.416Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:05:57] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:05:58.426Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:05:58] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:05:59.421Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:05:59] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:00.421Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:00] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:01.421Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:01] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:02.424Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:02] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:03.422Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:03] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:04.420Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:04] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:05.437Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:05] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:06.430Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:06] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:07.432Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:07] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:08.423Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:08] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:09.421Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:09] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:10.447Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:10] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:11.432Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:11] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:12.433Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:12] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:13.434Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:13] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:14.430Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:14] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:15.427Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:15] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:16.422Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:16] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:17.437Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:17] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:18.432Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:18] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:19.431Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:19] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:20.429Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:20] "GET /status/4 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:31.933Z] Iniciando servidor Python Flask...
+[2026-02-25T17:06:33.421Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-25T17:06:33.433Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.42:5000
+Press CTRL+C to quit
+
+[2026-02-25T17:06:33.553Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:33] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:06:33.630Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:33] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:06:40.897Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:40] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:06:41.913Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:41] "GET /status/5 HTTP/1.1" 200 -
+
+[2026-02-25T17:06:42.334Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:42] "GET /history HTTP/1.1" 200 -
+
+[2026-02-25T17:06:42.346Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:42] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:06:45.357Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:45] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:06:48.003Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:48] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:06:49.858Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:49] "GET /history HTTP/1.1" 200 -
+
+[2026-02-25T17:06:49.869Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:49] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:06:52.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:52] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:06:55.880Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:55] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:06:56.413Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 6 partes para síntese.
+
+[2026-02-25T17:06:56.415Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-02-25T17:06:56.915Z] Flask Log:                                                        Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-02-25T17:06:58.189Z] Flask Log:                                                        Gerando áudio:   0%|          | 0/6 [00:01<?, ?parte/s]
+[2026-02-25T17:06:58.883Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:06:58] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:07:00.437Z] Flask Log:                                                        
+[2026-02-25T17:07:00.438Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:04<?, ?parte/s]                                                       Gerando áudio:   0%|          | 0/6 [00:04<?, ?parte/s]Gerando áudio:   0%|          | 0/6 [00:04<?, ?parte/s]
+
+[2026-02-25T17:07:01.876Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:01] "GET /jobs HTTP/1.1" 200 -
+
+[2026-02-25T17:07:06.506Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:06] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:07:10.394Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:10] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:07:11.402Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:11] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:12.410Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:12] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:13.409Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:13] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:14.404Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:14] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:15.413Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:15] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:16.410Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:16] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:17.421Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:17] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:18.400Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:18] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:19.413Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:19] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:20.406Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:20] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:21.427Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:21] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:22.411Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:22] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:23.402Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:23] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:24.399Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:24] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:25.413Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:25] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:26.409Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:26] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:27.408Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:27] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:28.406Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:28] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:29.405Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:29] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:30.401Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:30] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:31.413Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:31] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:31.741Z] Flask Output:   ⚠ Erro, tentativa 1. Aguardando 1s...
+  ⚠ Erro, tentativa 2. Aguardando 2s...
+  [X] ERRO definitivo: 403 Cloud Text-to-Speech API has not been used in project 159879198617 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "SERVICE_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "texttospeech.googleapis.com"
+}
+metadata {
+  key: "serviceTitle"
+  value: "Cloud Text-to-Speech API"
+}
+metadata {
+  key: "containerInfo"
+  value: "159879198617"
+}
+metadata {
+  key: "consumer"
+  value: "projects/159879198617"
+}
+metadata {
+  key: "activationUrl"
+  value: "https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617"
+}
+, locale: "en-US"
+message: "Cloud Text-to-Speech API has not been used in project 159879198617 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console API activation"
+  url: "https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617"
+}
+]
+  [X] Falha na parte 1
+\n[X] ERRO: Apenas 0/6 partes geradas.
+
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 5 partes para síntese.
+
+[2026-02-25T17:07:31.742Z] Flask Log: Gerando áudio:   0%|          | 0/5 [00:00<?, ?parte/s]
+[2026-02-25T17:07:32.134Z] Flask Log:                                                        Gerando áudio:   0%|          | 0/5 [00:00<?, ?parte/s]
+[2026-02-25T17:07:32.399Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:32] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:33.400Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:33] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:33.410Z] Flask Log:                                                        
+[2026-02-25T17:07:33.411Z] Flask Log: Gerando áudio:   0%|          | 0/5 [00:01<?, ?parte/s]
+[2026-02-25T17:07:34.400Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:34] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:07:35.681Z] Flask Log:                                                        Gerando áudio:   0%|          | 0/5 [00:03<?, ?parte/s]                                                       
+[2026-02-25T17:07:35.681Z] Flask Log: Gerando áudio:   0%|          | 0/5 [00:03<?, ?parte/s]Gerando áudio:   0%|          | 0/5 [00:03<?, ?parte/s]
+
+[2026-02-25T17:07:35.970Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:07:35] "GET /status/6 HTTP/1.1" 200 -
+
+[2026-02-25T17:17:57.572Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:17:57] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:17:58.586Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:17:58] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:17:59.581Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:17:59] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:00.590Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:00] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:01.587Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:01] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:02.583Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:02] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:03.577Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:03] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:04.597Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:04] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:05.599Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:05] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:06.585Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:06] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:07.584Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:07] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:08.581Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:08] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:09.577Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:09] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:10.586Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:10] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:11.580Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:11] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:12.538Z] Flask Output:   ⚠ Erro, tentativa 1. Aguardando 1s...
+  ⚠ Erro, tentativa 2. Aguardando 2s...
+  [X] ERRO definitivo: 403 Cloud Text-to-Speech API has not been used in project 159879198617 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry. [reason: "SERVICE_DISABLED"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "texttospeech.googleapis.com"
+}
+metadata {
+  key: "serviceTitle"
+  value: "Cloud Text-to-Speech API"
+}
+metadata {
+  key: "containerInfo"
+  value: "159879198617"
+}
+metadata {
+  key: "consumer"
+  value: "projects/159879198617"
+}
+metadata {
+  key: "activationUrl"
+  value: "https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617"
+}
+, locale: "en-US"
+message: "Cloud Text-to-Speech API has not been used in project 159879198617 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+, links {
+  description: "Google developers console API activation"
+  url: "https://console.developers.google.com/apis/api/texttospeech.googleapis.com/overview?project=159879198617"
+}
+]
+  [X] Falha na parte 1
+\n[X] ERRO: Apenas 0/5 partes geradas.
+
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 6 partes para síntese.
+
+[2026-02-25T17:18:12.538Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-02-25T17:18:12.580Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:12] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:13.577Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:13] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:14.585Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:14] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:15.581Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:15] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:15.608Z] Flask Log: Gerando áudio:  17%|█▋        | 1/6 [00:03<00:15,  3.07s/parte]
+[2026-02-25T17:18:16.580Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:16] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:17.577Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:17] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:18.585Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:18] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:18.633Z] Flask Log: Gerando áudio:  33%|███▎      | 2/6 [00:06<00:12,  3.04s/parte]
+[2026-02-25T17:18:19.588Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:19] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:20.587Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:20] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:21.497Z] Flask Log: Gerando áudio:  50%|█████     | 3/6 [00:08<00:08,  2.96s/parte]
+[2026-02-25T17:18:21.581Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:21] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:22.954Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:22] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:24.008Z] Flask Log: Gerando áudio:  67%|██████▋   | 4/6 [00:11<00:05,  2.78s/parte]
+[2026-02-25T17:18:24.023Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:24] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:24.580Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:24] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:25.087Z] Flask Log:                                                                Gerando áudio:  67%|██████▋   | 4/6 [00:12<00:05,  2.78s/parte]
+[2026-02-25T17:18:25.585Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:25] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:26.583Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:26] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:27.581Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:27] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:28.567Z] Flask Log: Gerando áudio:  83%|████████▎ | 5/6 [00:16<00:03,  3.42s/parte]
+[2026-02-25T17:18:28.580Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:28] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:29.577Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:29] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:30.162Z] Flask Log: Gerando áudio: 100%|██████████| 6/6 [00:17<00:00,  2.80s/parte]Gerando áudio: 100%|██████████| 6/6 [00:17<00:00,  2.94s/parte]
+
+[2026-02-25T17:18:30.578Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:30] "GET /status/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:18:52.038Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:18:52] "GET /download_zip/7 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:52.353Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:52] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:21:53.362Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:53] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:54.371Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:54] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:55.369Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:55] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:56.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:56] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:57.371Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:57] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:58.369Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:58] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:21:59.366Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:21:59] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:00.357Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:00] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:01.371Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:01] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:02.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:02] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:03.371Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:03] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:04.366Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:04] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:05.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:05] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:06.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:06] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:07.361Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:07] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:08.357Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:08] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:09.122Z] Flask Output:   ⚠ Erro, tentativa 1. Aguardando 1s...
+
+--- MESCLANDO 6 ARQUIVOS DE ÁUDIO (MÉTODO NATIVO) ---
+Áudio mesclado salvo em: jobs\7\L15046.mp3
+\n[OK] SUCESSO: Audio completo salvo em 'jobs\7\L15046.mp3'
+📝 Gerando sincronização por frases...
+
+[INFO] Gerando timestamps por frase...
+[INFO] Total de frases: 28
+[INFO] Duracao do audio: 108.6s
+[OK] Timestamps gerados: 28 frases
+[INFO] Sincronizacao rapida e eficiente!
+[SAVE] Timestamps salvos em: jobs\7\L15046_timestamps.json
+[OK] Sincronizacao por frases configurada!
+
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 6 partes para síntese.
+
+[2026-02-25T17:22:09.122Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-02-25T17:22:09.372Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:09] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:10.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:10] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:11.359Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:11] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:12.369Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:12] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:13.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:13] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:13.740Z] Flask Log: Gerando áudio:  17%|█▋        | 1/6 [00:04<00:23,  4.62s/parte]
+[2026-02-25T17:22:14.360Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:14] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:15.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:15] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:16.363Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:16] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:17.362Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:17] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:17.955Z] Flask Log: Gerando áudio:  33%|███▎      | 2/6 [00:08<00:17,  4.38s/parte]
+[2026-02-25T17:22:18.360Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:18] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:19.364Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:19] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:20.363Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:20] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:20.807Z] Flask Log: Gerando áudio:  50%|█████     | 3/6 [00:11<00:11,  3.68s/parte]
+[2026-02-25T17:22:21.359Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:21] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:22.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:22] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:23.362Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:23] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:23.906Z] Flask Log: Gerando áudio:  67%|██████▋   | 4/6 [00:14<00:06,  3.45s/parte]
+[2026-02-25T17:22:24.359Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:24] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:25.365Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:25] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:26.364Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:26] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:26.524Z] Flask Log: Gerando áudio:  83%|████████▎ | 5/6 [00:17<00:03,  3.15s/parte]
+[2026-02-25T17:22:27.025Z] Flask Log: Gerando áudio: 100%|██████████| 6/6 [00:17<00:00,  2.25s/parte]Gerando áudio: 100%|██████████| 6/6 [00:17<00:00,  2.98s/parte]
+
+[2026-02-25T17:22:27.364Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:27] "GET /status/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:22:28.895Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:22:28] "GET /download_zip/8 HTTP/1.1" 200 -
+
+[2026-02-25T17:30:55.785Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:30:55] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:30:56.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:30:56] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:30:57.790Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:30:57] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:30:58.808Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:30:58] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:30:59.795Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:30:59] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:00.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:00] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:01.799Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:01] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:02.791Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:02] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:03.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:03] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:04.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:04] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:05.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:05] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:06.795Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:06] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:07.808Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:07] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:08.796Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:08] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:09.790Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:09] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:10.790Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:10] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:11.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:11] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:12.793Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:12] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:13.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:13] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:14.799Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:14] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:15.796Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:15] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:16.800Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:16] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:17.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:17] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:18.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:18] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:19.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:19] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:20.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:20] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:21.800Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:21] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:22.796Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:22] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:23.793Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:23] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:24.791Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:24] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:25.804Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:25] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:26.800Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:26] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:27.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:27] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:28.800Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:28] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:29.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:29] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:30.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:30] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:31.795Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:31] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:32.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:32] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:33.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:33] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:34.413Z] Flask Output: 
+--- MESCLANDO 6 ARQUIVOS DE ÁUDIO (MÉTODO NATIVO) ---
+Áudio mesclado salvo em: jobs\8\L15046.mp3
+\n[OK] SUCESSO: Audio completo salvo em 'jobs\8\L15046.mp3'
+📝 Gerando sincronização por frases...
+
+[INFO] Gerando timestamps por frase...
+[INFO] Total de frases: 24
+[INFO] Duracao do audio: 105.2s
+[OK] Timestamps gerados: 24 frases
+[INFO] Sincronizacao rapida e eficiente!
+[SAVE] Timestamps salvos em: jobs\8\L15046_timestamps.json
+[OK] Sincronizacao por frases configurada!
+
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+[OK] Lei extraida com sucesso! (10373 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 21 partes para síntese.
+
+[2026-02-25T17:31:34.414Z] Flask Log: Gerando áudio:   0%|          | 0/21 [00:00<?, ?parte/s]
+[2026-02-25T17:31:34.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:34] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:35.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:35] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:36.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:36] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:36.814Z] Flask Log: Gerando áudio:   5%|▍         | 1/21 [00:02<00:48,  2.40s/parte]
+[2026-02-25T17:31:37.802Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:37] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:38.795Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:38] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:39.802Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:39] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:39.940Z] Flask Log: Gerando áudio:  10%|▉         | 2/21 [00:05<00:53,  2.83s/parte]
+[2026-02-25T17:31:40.804Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:40] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:41.800Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:41] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:42.234Z] Flask Log: Gerando áudio:  14%|█▍        | 3/21 [00:07<00:46,  2.58s/parte]
+[2026-02-25T17:31:42.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:42] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:43.797Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:43] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:44.375Z] Flask Log: Gerando áudio:  19%|█▉        | 4/21 [00:09<00:40,  2.41s/parte]
+[2026-02-25T17:31:44.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:44] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:45.805Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:45] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:46.494Z] Flask Log: Gerando áudio:  24%|██▍       | 5/21 [00:12<00:36,  2.30s/parte]
+[2026-02-25T17:31:46.797Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:46] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:47.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:47] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:48.648Z] Flask Log: Gerando áudio:  29%|██▊       | 6/21 [00:14<00:33,  2.25s/parte]
+[2026-02-25T17:31:48.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:48] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:49.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:49] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:50.799Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:50] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:50.822Z] Flask Log: Gerando áudio:  33%|███▎      | 7/21 [00:16<00:31,  2.23s/parte]
+[2026-02-25T17:31:51.795Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:51] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:52.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:52] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:52.879Z] Flask Log: Gerando áudio:  38%|███▊      | 8/21 [00:18<00:28,  2.17s/parte]
+[2026-02-25T17:31:53.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:53] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:54.793Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:54] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:55.123Z] Flask Log: Gerando áudio:  43%|████▎     | 9/21 [00:20<00:26,  2.20s/parte]
+[2026-02-25T17:31:55.791Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:55] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:56.800Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:56] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:57.509Z] Flask Log: Gerando áudio:  48%|████▊     | 10/21 [00:23<00:24,  2.25s/parte]
+[2026-02-25T17:31:57.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:57] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:58.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:58] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:31:59.510Z] Flask Log: Gerando áudio:  52%|█████▏    | 11/21 [00:25<00:21,  2.18s/parte]
+[2026-02-25T17:31:59.797Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:31:59] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:00.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:00] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:01.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:01] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:02.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:02] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:03.760Z] Flask Log: Gerando áudio:  57%|█████▋    | 12/21 [00:29<00:25,  2.81s/parte]
+[2026-02-25T17:32:03.802Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:03] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:04.799Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:04] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:05.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:05] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:06.071Z] Flask Log: Gerando áudio:  62%|██████▏   | 13/21 [00:31<00:21,  2.66s/parte]
+[2026-02-25T17:32:06.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:06] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:07.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:07] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:08.427Z] Flask Log: Gerando áudio:  67%|██████▋   | 14/21 [00:34<00:17,  2.57s/parte]
+[2026-02-25T17:32:08.812Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:08] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:09.797Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:09] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:10.529Z] Flask Log: Gerando áudio:  71%|███████▏  | 15/21 [00:36<00:14,  2.43s/parte]
+[2026-02-25T17:32:10.793Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:10] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:11.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:11] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:12.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:12] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:13.084Z] Flask Log: Gerando áudio:  76%|███████▌  | 16/21 [00:38<00:12,  2.46s/parte]
+[2026-02-25T17:32:13.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:13] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:14.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:14] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:15.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:15] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:16.148Z] Flask Log: Gerando áudio:  81%|████████  | 17/21 [00:41<00:10,  2.65s/parte]
+[2026-02-25T17:32:16.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:16] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:17.801Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:17] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:18.331Z] Flask Log: Gerando áudio:  86%|████████▌ | 18/21 [00:43<00:07,  2.51s/parte]
+[2026-02-25T17:32:18.798Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:18] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:19.796Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:19] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:20.790Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:20] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:21.433Z] Flask Log: Gerando áudio:  90%|█████████ | 19/21 [00:47<00:05,  2.69s/parte]
+[2026-02-25T17:32:21.804Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:21] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:22.802Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:22] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:23.597Z] Flask Log: Gerando áudio:  95%|█████████▌| 20/21 [00:49<00:02,  2.53s/parte]
+[2026-02-25T17:32:23.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:23] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:24.336Z] Flask Log: Gerando áudio: 100%|██████████| 21/21 [00:49<00:00,  1.99s/parte]
+[2026-02-25T17:32:24.339Z] Flask Log: Gerando áudio: 100%|██████████| 21/21 [00:49<00:00,  2.38s/parte]
+
+[2026-02-25T17:32:24.803Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:24] "GET /status/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:32:40.646Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:32:40] "GET /download_zip/9 HTTP/1.1" 200 -
+
+[2026-02-25T17:33:57.804Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:33:57] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:33:58.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:33:58] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:33:59.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:33:59] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:00.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:00] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:01.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:01] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:02.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:02] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:03.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:03] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:04.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:04] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:05.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:05] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:06.832Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:06] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:07.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:07] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:08.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:08] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:09.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:09] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:10.817Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:10] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:11.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:11] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:12.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:12] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:13.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:13] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:14.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:14] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:15.808Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:15] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:16.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:16] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:17.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:17] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:18.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:18] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:19.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:19] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:20.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:20] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:21.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:21] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:22.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:22] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:23.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:23] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:24.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:24] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:25.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:25] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:26.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:26] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:27.817Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:27] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:28.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:28] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:29.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:29] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:30.808Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:30] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:31.824Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:31] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:32.823Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:32] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:33.816Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:33] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:34.816Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:34] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:35.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:35] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:36.833Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:36] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:37.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:37] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:38.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:38] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:39.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:39] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:40.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:40] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:41.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:41] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:42.812Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:42] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:43.824Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:43] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:44.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:44] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:45.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:45] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:46.823Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:46] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:47.439Z] Flask Output: 
+--- MESCLANDO 21 ARQUIVOS DE ÁUDIO (MÉTODO NATIVO) ---
+Áudio mesclado salvo em: jobs\9\l6281.mp3
+\n[OK] SUCESSO: Audio completo salvo em 'jobs\9\l6281.mp3'
+📝 Gerando sincronização por frases...
+
+[INFO] Gerando timestamps por frase...
+[INFO] Total de frases: 86
+[INFO] Duracao do audio: 405.4s
+[OK] Timestamps gerados: 86 frases
+[INFO] Sincronizacao rapida e eficiente!
+[SAVE] Timestamps salvos em: jobs\9\l6281_timestamps.json
+[OK] Sincronizacao por frases configurada!
+
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+[OK] Lei extraida com sucesso! (10373 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 24 partes para síntese.
+
+[2026-02-25T17:34:47.442Z] Flask Log: Gerando áudio:   0%|          | 0/24 [00:00<?, ?parte/s]
+[2026-02-25T17:34:47.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:47] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:48.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:48] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:49.564Z] Flask Log: Gerando áudio:   4%|▍         | 1/24 [00:02<00:48,  2.12s/parte]
+[2026-02-25T17:34:49.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:49] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:50.811Z] Flask Log: Gerando áudio:   8%|▊         | 2/24 [00:03<00:35,  1.61s/parte]
+[2026-02-25T17:34:50.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:50] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:51.812Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:51] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:52.486Z] Flask Log: Gerando áudio:  12%|█▎        | 3/24 [00:05<00:34,  1.64s/parte]
+[2026-02-25T17:34:52.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:52] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:53.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:53] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:54.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:54] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:55.673Z] Flask Log: Gerando áudio:  17%|█▋        | 4/24 [00:08<00:44,  2.25s/parte]
+[2026-02-25T17:34:55.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:55] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:56.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:56] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:57.817Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:57] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:58.489Z] Flask Log: Gerando áudio:  21%|██        | 5/24 [00:11<00:46,  2.45s/parte]
+[2026-02-25T17:34:58.817Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:58] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:34:59.812Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:34:59] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:00.823Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:00] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:01.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:01] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:02.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:02] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:03.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:03] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:04.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:04] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:05.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:05] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:06.812Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:06] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:06.928Z] Flask Log: Gerando áudio:  25%|██▌       | 6/24 [00:19<01:20,  4.49s/parte]
+[2026-02-25T17:35:07.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:07] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:08.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:08] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:09.816Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:09] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:09.902Z] Flask Log: Gerando áudio:  29%|██▉       | 7/24 [00:22<01:07,  3.99s/parte]
+[2026-02-25T17:35:10.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:10] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:11.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:11] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:12.542Z] Flask Log: Gerando áudio:  33%|███▎      | 8/24 [00:25<00:57,  3.56s/parte]
+[2026-02-25T17:35:12.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:12] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:13.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:13] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:14.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:14] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:15.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:15] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:16.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:16] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:17.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:17] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:18.721Z] Flask Log: Gerando áudio:  38%|███▊      | 9/24 [00:31<01:05,  4.38s/parte]
+[2026-02-25T17:35:18.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:18] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:19.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:19] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:20.823Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:20] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:21.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:21] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:21.837Z] Flask Log: Gerando áudio:  42%|████▏     | 10/24 [00:34<00:55,  3.99s/parte]
+[2026-02-25T17:35:22.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:22] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:23.784Z] Flask Log: Gerando áudio:  46%|████▌     | 11/24 [00:36<00:43,  3.36s/parte]
+[2026-02-25T17:35:23.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:23] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:24.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:24] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:25.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:25] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:25.993Z] Flask Log: Gerando áudio:  50%|█████     | 12/24 [00:38<00:36,  3.01s/parte]
+[2026-02-25T17:35:26.815Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:26] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:27.796Z] Flask Log: Gerando áudio:  54%|█████▍    | 13/24 [00:40<00:29,  2.65s/parte]
+[2026-02-25T17:35:27.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:27] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:28.818Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:28] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:29.811Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:29] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:29.992Z] Flask Log: Gerando áudio:  58%|█████▊    | 14/24 [00:42<00:25,  2.51s/parte]
+[2026-02-25T17:35:30.825Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:30] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:31.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:31] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:32.142Z] Flask Log: Gerando áudio:  62%|██████▎   | 15/24 [00:44<00:21,  2.40s/parte]
+[2026-02-25T17:35:32.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:32] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:33.734Z] Flask Log: Gerando áudio:  67%|██████▋   | 16/24 [00:46<00:17,  2.16s/parte]
+[2026-02-25T17:35:33.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:33] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:34.833Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:34] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:35.822Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:35] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:36.803Z] Flask Log: Gerando áudio:  71%|███████   | 17/24 [00:49<00:17,  2.43s/parte]
+[2026-02-25T17:35:36.825Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:36] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:37.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:37] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:38.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:38] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:39.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:39] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:39.842Z] Flask Log: Gerando áudio:  75%|███████▌  | 18/24 [00:52<00:15,  2.61s/parte]
+[2026-02-25T17:35:40.816Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:40] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:41.811Z] Flask Log: Gerando áudio:  79%|███████▉  | 19/24 [00:54<00:12,  2.42s/parte]
+[2026-02-25T17:35:41.825Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:41] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:42.819Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:42] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:43.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:43] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:44.422Z] Flask Log: Gerando áudio:  83%|████████▎ | 20/24 [00:56<00:09,  2.48s/parte]
+[2026-02-25T17:35:44.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:44] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:45.824Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:45] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:46.821Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:46] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:47.187Z] Flask Log: Gerando áudio:  88%|████████▊ | 21/24 [00:59<00:07,  2.56s/parte]
+[2026-02-25T17:35:47.814Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:47] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:48.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:48] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:49.813Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:49] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:50.810Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:50] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:50.842Z] Flask Log: Gerando áudio:  92%|█████████▏| 22/24 [01:03<00:05,  2.89s/parte]
+[2026-02-25T17:35:51.832Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:51] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:52.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:52] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:52.931Z] Flask Log: Gerando áudio:  96%|█████████▌| 23/24 [01:05<00:02,  2.65s/parte]
+[2026-02-25T17:35:53.820Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:53] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:54.809Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:54] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:55.100Z] Flask Log: Gerando áudio: 100%|██████████| 24/24 [01:07<00:00,  2.51s/parte]Gerando áudio: 100%|██████████| 24/24 [01:07<00:00,  2.82s/parte]
+
+[2026-02-25T17:35:55.817Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:55] "GET /status/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:59.467Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:59] "GET /download_zip/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:35:59.617Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:35:59] "GET /download_zip/10 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:20.137Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:20] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:45:21.712Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:21] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:45:28.406Z] Iniciando servidor Python Flask...
+[2026-02-25T17:45:30.509Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-25T17:45:30.549Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.42:5000
+Press CTRL+C to quit
+
+[2026-02-25T17:45:30.553Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:30] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:45:30.629Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:30] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:45:34.773Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:34] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:45:35.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:35] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:36.784Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:36] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:37.777Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:37] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:38.790Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:38] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:39.782Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:39] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:40.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:40] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:41.791Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:41] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:42.780Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:42] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:43.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:43] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:44.781Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:44] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:45.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:45] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:46.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:46] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:47.793Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:47] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:48.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:48] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:49.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:49] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:50.783Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:50] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:51.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:51] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:52.790Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:52] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:53.782Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:53] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:54.780Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:54] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:55.785Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:55] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:56.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:56] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:57.958Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:57] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:58.955Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:58] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:45:59.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:45:59] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:00.952Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:00] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:01.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:01] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:02.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:02] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:03.962Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:03] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:04.969Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:04] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:05.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:05] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:06.784Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:06] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:07.780Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:07] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:08.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:08] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:09.955Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:09] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:10.957Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:10] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:11.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:11] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:12.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:12] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:13.954Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:13] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:14.999Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:14] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:15.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:15] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:16.953Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:16] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:17.968Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:17] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:18.956Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:18] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:19.966Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:19] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:20.953Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:20] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:22.049Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:22] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:22.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:22] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:23.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:23] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:24.953Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:24] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:25.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:25] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:26.959Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:26] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:28.034Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:28] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:28.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:28] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:29.958Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:29] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:30.952Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:30] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:31.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:31] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:32.955Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:32] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:33.782Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:33] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:34.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:34] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:35.777Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:35] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:36.956Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:36] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:37.966Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:37] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:38.600Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+[OK] Lei extraida com sucesso! (10373 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 25 partes para síntese.
+
+[2026-02-25T17:46:38.600Z] Flask Log: Gerando áudio:   0%|          | 0/25 [00:00<?, ?parte/s]
+[2026-02-25T17:46:38.962Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:38] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:39.958Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:39] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:40.578Z] Flask Log: Gerando áudio:   4%|▍         | 1/25 [00:01<00:47,  1.98s/parte]
+[2026-02-25T17:46:40.954Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:40] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:41.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:41] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:42.272Z] Flask Log: Gerando áudio:   8%|▊         | 2/25 [00:03<00:41,  1.81s/parte]
+[2026-02-25T17:46:42.959Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:42] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:43.753Z] Flask Log: Gerando áudio:  12%|█▏        | 3/25 [00:05<00:36,  1.66s/parte]
+[2026-02-25T17:46:43.950Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:43] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:44.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:44] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:45.907Z] Flask Log: Gerando áudio:  16%|█▌        | 4/25 [00:07<00:38,  1.86s/parte]
+[2026-02-25T17:46:45.956Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:45] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:46.952Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:46] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:47.983Z] Flask Log: Gerando áudio:  20%|██        | 5/25 [00:09<00:38,  1.94s/parte]
+[2026-02-25T17:46:47.994Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:47] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:48.955Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:48] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:49.957Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:49] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:50.719Z] Flask Log: Gerando áudio:  24%|██▍       | 6/25 [00:12<00:41,  2.21s/parte]
+[2026-02-25T17:46:50.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:50] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:51.966Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:51] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:52.961Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:52] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:52.968Z] Flask Log: Gerando áudio:  28%|██▊       | 7/25 [00:14<00:39,  2.22s/parte]
+[2026-02-25T17:46:53.951Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:53] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:55.031Z] Flask Log: Gerando áudio:  32%|███▏      | 8/25 [00:16<00:36,  2.17s/parte]
+[2026-02-25T17:46:55.066Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:55] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:55.966Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:55] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:56.596Z] Flask Log: Gerando áudio:  36%|███▌      | 9/25 [00:17<00:31,  1.98s/parte]
+[2026-02-25T17:46:56.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:56] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:57.956Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:57] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:58.334Z] Flask Log: Gerando áudio:  40%|████      | 10/25 [00:19<00:28,  1.91s/parte]
+[2026-02-25T17:46:58.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:58] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:46:59.540Z] Flask Log: Gerando áudio:  44%|████▍     | 11/25 [00:20<00:23,  1.69s/parte]
+[2026-02-25T17:46:59.962Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:46:59] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:00.973Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:00] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:01.269Z] Flask Log: Gerando áudio:  48%|████▊     | 12/25 [00:22<00:22,  1.70s/parte]
+[2026-02-25T17:47:01.960Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:01] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:02.712Z] Flask Log: Gerando áudio:  52%|█████▏    | 13/25 [00:24<00:19,  1.62s/parte]
+[2026-02-25T17:47:02.965Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:02] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:03.964Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:03] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:04.460Z] Flask Log: Gerando áudio:  56%|█████▌    | 14/25 [00:25<00:18,  1.66s/parte]
+[2026-02-25T17:47:04.952Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:04] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:05.956Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:05] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:06.910Z] Flask Log: Gerando áudio:  60%|██████    | 15/25 [00:28<00:18,  1.90s/parte]
+[2026-02-25T17:47:06.963Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:06] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:07.992Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:07] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:08.957Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:08] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:09.238Z] Flask Log: Gerando áudio:  64%|██████▍   | 16/25 [00:30<00:18,  2.03s/parte]
+[2026-02-25T17:47:09.789Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:09] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:10.786Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:10] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:11.570Z] Flask Log: Gerando áudio:  68%|██████▊   | 17/25 [00:32<00:16,  2.12s/parte]
+[2026-02-25T17:47:11.784Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:11] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:12.781Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:12] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:13.779Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:13] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:13.998Z] Flask Log: Gerando áudio:  72%|███████▏  | 18/25 [00:35<00:15,  2.21s/parte]
+[2026-02-25T17:47:14.791Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:14] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:15.784Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:15] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:16.779Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:16] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:17.461Z] Flask Log: Gerando áudio:  76%|███████▌  | 19/25 [00:38<00:15,  2.59s/parte]
+[2026-02-25T17:47:17.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:17] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:18.781Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:18] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:19.618Z] Flask Log: Gerando áudio:  80%|████████  | 20/25 [00:41<00:12,  2.46s/parte]
+[2026-02-25T17:47:19.794Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:19] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:20.787Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:20] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:21.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:21] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:21.978Z] Flask Log: Gerando áudio:  84%|████████▍ | 21/25 [00:43<00:09,  2.43s/parte]
+[2026-02-25T17:47:22.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:22] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:23.784Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:23] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:23.940Z] Flask Log: Gerando áudio:  88%|████████▊ | 22/25 [00:45<00:06,  2.29s/parte]
+[2026-02-25T17:47:24.778Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:24] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:25.781Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:25] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:26.777Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:26] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:26.816Z] Flask Log: Gerando áudio:  92%|█████████▏| 23/25 [00:48<00:04,  2.47s/parte]
+[2026-02-25T17:47:27.788Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:27] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:28.360Z] Flask Log: Gerando áudio:  96%|█████████▌| 24/25 [00:49<00:02,  2.19s/parte]
+[2026-02-25T17:47:28.782Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:28] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:29.792Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:29] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:30.782Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:30] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:31.128Z] Flask Log: Gerando áudio: 100%|██████████| 25/25 [00:52<00:00,  2.36s/parte]Gerando áudio: 100%|██████████| 25/25 [00:52<00:00,  2.10s/parte]
+
+[2026-02-25T17:47:31.793Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:31] "GET /status/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:47:42.538Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:47:42] "GET /download_zip/11 HTTP/1.1" 200 -
+
+[2026-02-25T17:52:49.662Z] Iniciando servidor Python Flask...
+[2026-02-25T17:52:51.199Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-25T17:52:51.226Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.42:5000
+Press CTRL+C to quit
+
+[2026-02-25T17:52:51.288Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:51] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:52:51.362Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:51] "GET / HTTP/1.1" 200 -
+
+[2026-02-25T17:52:55.869Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:55] "POST /process HTTP/1.1" 200 -
+
+[2026-02-25T17:52:56.889Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:56] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:52:57.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:57] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:52:58.877Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:58] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:52:59.886Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:52:59] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:00.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:00] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:01.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:01] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:02.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:02] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:03.874Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:03] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:04.877Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:04] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:05.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:05] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:06.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:06] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:07.886Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:07] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:08.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:08] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:09.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:09] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:10.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:10] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:11.874Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:11] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:12.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:12] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:13.880Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:13] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:14.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:14] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:15.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:15] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:16.883Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:16] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:17.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:17] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:18.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:18] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:19.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:19] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:20.885Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:20] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:21.876Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:21] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:22.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:22] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:23.886Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:23] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:24.886Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:24] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:25.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:25] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:26.876Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:26] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:27.885Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:27] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:28.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:28] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:29.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:29] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:30.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:30] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:31.885Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:31] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:32.393Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+[OK] Lei extraida com sucesso! (10373 caracteres)
+
+--- HUMANIZANDO TEXTO COM GEMINI ---
+Texto humanizado com sucesso!
+\n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 25 partes para síntese.
+
+[2026-02-25T17:53:32.393Z] Flask Log: Gerando áudio:   0%|          | 0/25 [00:00<?, ?parte/s]
+[2026-02-25T17:53:32.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:32] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:33.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:33] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:34.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:34] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:35.025Z] Flask Log: Gerando áudio:   4%|▍         | 1/25 [00:02<01:03,  2.63s/parte]
+[2026-02-25T17:53:35.886Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:35] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:36.357Z] Flask Log: Gerando áudio:   8%|▊         | 2/25 [00:03<00:42,  1.87s/parte]
+[2026-02-25T17:53:36.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:36] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:37.876Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:37] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:38.886Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:38] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:38.891Z] Flask Log: Gerando áudio:  12%|█▏        | 3/25 [00:06<00:47,  2.17s/parte]
+[2026-02-25T17:53:39.883Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:39] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:40.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:40] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:41.064Z] Flask Log: Gerando áudio:  16%|█▌        | 4/25 [00:08<00:45,  2.17s/parte]
+[2026-02-25T17:53:41.895Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:41] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:42.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:42] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:43.339Z] Flask Log: Gerando áudio:  20%|██        | 5/25 [00:10<00:44,  2.21s/parte]
+[2026-02-25T17:53:43.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:43] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:44.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:44] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:45.764Z] Flask Log: Gerando áudio:  24%|██▍       | 6/25 [00:13<00:43,  2.28s/parte]
+[2026-02-25T17:53:45.891Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:45] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:46.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:46] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:47.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:47] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:48.641Z] Flask Log: Gerando áudio:  28%|██▊       | 7/25 [00:16<00:44,  2.48s/parte]
+[2026-02-25T17:53:48.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:48] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:49.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:49] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:50.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:50] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:51.213Z] Flask Log: Gerando áudio:  32%|███▏      | 8/25 [00:18<00:42,  2.51s/parte]
+[2026-02-25T17:53:51.889Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:51] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:52.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:52] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:53.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:53] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:54.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:54] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:54.933Z] Flask Log: Gerando áudio:  36%|███▌      | 9/25 [00:22<00:46,  2.89s/parte]
+[2026-02-25T17:53:55.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:55] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:56.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:56] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:56.955Z] Flask Log: Gerando áudio:  40%|████      | 10/25 [00:24<00:39,  2.62s/parte]
+[2026-02-25T17:53:57.885Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:57] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:58.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:58] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:53:59.813Z] Flask Log: Gerando áudio:  44%|████▍     | 11/25 [00:27<00:37,  2.69s/parte]
+[2026-02-25T17:53:59.880Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:53:59] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:00.889Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:00] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:01.877Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:01] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:02.123Z] Flask Log: Gerando áudio:  48%|████▊     | 12/25 [00:29<00:33,  2.58s/parte]
+[2026-02-25T17:54:02.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:02] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:03.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:03] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:04.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:04] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:05.129Z] Flask Log: Gerando áudio:  52%|█████▏    | 13/25 [00:32<00:32,  2.71s/parte]
+[2026-02-25T17:54:05.891Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:05] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:06.885Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:06] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:07.877Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:07] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:08.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:08] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:09.001Z] Flask Log: Gerando áudio:  56%|█████▌    | 14/25 [00:36<00:33,  3.06s/parte]
+[2026-02-25T17:54:09.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:09] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:10.883Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:10] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:11.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:11] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:12.462Z] Flask Log: Gerando áudio:  60%|██████    | 15/25 [00:40<00:31,  3.18s/parte]
+[2026-02-25T17:54:12.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:12] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:13.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:13] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:14.468Z] Flask Log: Gerando áudio:  64%|██████▍   | 16/25 [00:42<00:25,  2.83s/parte]
+[2026-02-25T17:54:14.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:14] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:15.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:15] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:16.719Z] Flask Log: Gerando áudio:  68%|██████▊   | 17/25 [00:44<00:21,  2.65s/parte]
+[2026-02-25T17:54:16.892Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:16] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:17.885Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:17] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:18.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:18] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:19.293Z] Flask Log: Gerando áudio:  72%|███████▏  | 18/25 [00:46<00:18,  2.63s/parte]
+[2026-02-25T17:54:19.875Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:19] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:20.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:20] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:21.694Z] Flask Log: Gerando áudio:  76%|███████▌  | 19/25 [00:49<00:15,  2.56s/parte]
+[2026-02-25T17:54:21.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:21] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:22.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:22] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:23.868Z] Flask Log: Gerando áudio:  80%|████████  | 20/25 [00:51<00:12,  2.44s/parte]
+[2026-02-25T17:54:23.884Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:23] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:24.889Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:24] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:25.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:25] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:26.166Z] Flask Log: Gerando áudio:  84%|████████▍ | 21/25 [00:53<00:09,  2.40s/parte]
+[2026-02-25T17:54:26.882Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:26] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:27.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:27] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:28.223Z] Flask Log: Gerando áudio:  88%|████████▊ | 22/25 [00:55<00:06,  2.30s/parte]
+[2026-02-25T17:54:28.887Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:28] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:29.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:29] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:30.028Z] Flask Log: Gerando áudio:  92%|█████████▏| 23/25 [00:57<00:04,  2.15s/parte]
+[2026-02-25T17:54:30.891Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:30] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:31.879Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:31] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:32.599Z] Flask Log: Gerando áudio:  96%|█████████▌| 24/25 [01:00<00:02,  2.28s/parte]
+[2026-02-25T17:54:32.888Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:32] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:33.881Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:33] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:34.370Z] Flask Log: Gerando áudio: 100%|██████████| 25/25 [01:01<00:00,  2.12s/parte]Gerando áudio: 100%|██████████| 25/25 [01:01<00:00,  2.48s/parte]
+
+[2026-02-25T17:54:34.878Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:34] "GET /status/12 HTTP/1.1" 200 -
+
+[2026-02-25T17:54:39.135Z] Flask Access: 127.0.0.1 - - [25/Feb/2026 14:54:39] "GET /download_zip/12 HTTP/1.1" 200 -
+
