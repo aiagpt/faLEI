@@ -205,37 +205,38 @@ async function runGeminiAutomation(text, prompt) {
                 for (let i = 0; i < 120; i++) {
                     await new Promise(r => setTimeout(r, 1000));
 
+                    // Como pode ser uma única UI reativa, pegar todos
                     const allResponses = document.querySelectorAll('model-response');
-                    const newResponses = Array.from(allResponses).slice(countBefore);
+                    if (allResponses.length === 0) continue;
 
-                    if (newResponses.length > 0) {
-                        const lastResponse = newResponses[newResponses.length - 1];
-                        const markdownBlock = lastResponse.querySelector('.markdown, .model-response-text, message-content');
-                        const currentText = (markdownBlock || lastResponse).innerText || '';
+                    // O Gemini costuma adicionar as respostas no fim.
+                    // Nos precaivemos caso "countBefore" falhe na recriação de tela nova:
+                    const lastResponse = allResponses[allResponses.length - 1];
+                    const markdownBlock = lastResponse.querySelector('.markdown, .model-response-text, message-content');
+                    const currentText = (markdownBlock || lastResponse).innerText || '';
 
-                        if (currentText && currentText.length > 30 && currentText === lastText) {
-                            stableCount++;
-                            if (stableCount >= 3) {
-                                return currentText
-                                    .split('\\n')
-                                    .filter(line => {
-                                        const l = line.trim();
-                                        return l !== 'Fontes'
-                                            && !l.startsWith('O Gemini disse')
-                                            && !l.startsWith('Mostrar rascunhos')
-                                            && !l.startsWith('volume_up')
-                                            && !l.startsWith('content_copy')
-                                            && !l.startsWith('thumb_up')
-                                            && !l.startsWith('thumb_down')
-                                            && !l.startsWith('more_vert');
-                                    })
-                                    .join('\\n')
-                                    .trim();
+                    if (currentText && currentText.trim().length > 0 && currentText === lastText) {
+                        stableCount++;
+                        if (stableCount >= 3) {
+                            return currentText
+                                .split('\\n')
+                                .filter(line => {
+                                    const l = line.trim();
+                                    return l !== 'Fontes'
+                                        && !l.startsWith('O Gemini disse')
+                                        && !l.startsWith('Mostrar rascunhos')
+                                        && !l.startsWith('volume_up')
+                                        && !l.startsWith('content_copy')
+                                        && !l.startsWith('thumb_up')
+                                        && !l.startsWith('thumb_down')
+                                        && !l.startsWith('more_vert');
+                                })
+                                .join('\\n')
+                                .trim();
 
-                            }
-                        } else {
-                            stableCount = 0;
                         }
+                    } else if (currentText && currentText.trim().length > 0) {
+                        stableCount = 0;
                         lastText = currentText;
                     }
                 }
@@ -249,7 +250,16 @@ async function runGeminiAutomation(text, prompt) {
     `;
 
 
-    const result = await geminiWindow.webContents.executeJavaScript(script);
+    log('[Gemini] Executando script de automação...');
+    let result;
+    try {
+        result = await geminiWindow.webContents.executeJavaScript(script);
+    } catch (scriptErr) {
+        log(`[Gemini] ERRO ao executar script: ${scriptErr.message}`);
+        throw new Error(`Script failed to execute: ${scriptErr.message}`);
+    }
+
+    log(`[Gemini] Script retornou: "${String(result).substring(0, 150)}..."`);
 
     if (typeof result === 'string' && (result.startsWith('ERROR') || result.startsWith('TIMEOUT'))) {
         throw new Error(result);
@@ -452,6 +462,7 @@ function startFlaskServer() {
         env: {
             ...process.env,
             PYTHONIOENCODING: 'utf-8',
+            PYTHONUNBUFFERED: '1',
             ELECTRON_IPC_PORT: String(IPC_PORT),
             SKIP_TTS: process.env.SKIP_TTS || '0'
         }
@@ -463,8 +474,13 @@ function startFlaskServer() {
 
     flaskProcess.stderr.on('data', (data) => {
         const msg = data.toString();
-        if (msg.includes('" 200 ') || msg.includes('" 304 ') || msg.includes('Running on')) {
-            log(`Flask Access: ${msg}`);
+        // Filtrar logs de acesso HTTP do Werkzeug (GET/POST com status code)
+        if (msg.includes('" 200 ') || msg.includes('" 304 ')) {
+            // Silenciar completamente os logs de polling
+            return;
+        }
+        if (msg.includes('Running on') || msg.includes('Press CTRL')) {
+            log(`Flask Log: ${msg}`);
         } else {
             log(`Flask Log: ${msg}`);
         }

@@ -8,6 +8,11 @@ from services.tts_service import TTSService
 from utils.web_scraper import buscar_lei_por_url
 from config.settings import settings
 from database.job_db import JobDatabase
+import logging
+
+# Desativar logs de acesso do Flask (Werkzeug) para não poluir o terminal com polling
+log = logging.getLogger('werkzeug')
+log.setLevel(logging.ERROR)
 
 app = Flask(__name__)
 db = JobDatabase()

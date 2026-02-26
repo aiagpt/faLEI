@@ -100,9 +100,28 @@ Entregar apenas o texto convertido, sem introduções, sem comentários e sem ma
 TEXTO PARA CONVERTER:
 """
 
+PROMPT_VERIFICACAO = """Você é um REVISOR DE AUDIOLIVROS JURÍDICOS.
+Sua missão é verificar se o Texto Humanizado é uma boa conversão para leitura em áudio do Texto Original.
 
+REGRAS DE VERIFICAÇÃO (só reprove se houver violação CLARA):
+1. O conteúdo essencial do texto (artigos, parágrafos, incisos) NÃO pode ter sido omitido.
+2. Artefatos estritamente HTML (nomes de arquivos como ".gif", tags HTML, descrições técnicas de imagem) devem ter sido ignorados. ATENÇÃO: Cabeçalhos institucionais como "Presidência da República", "Casa Civil" NÃO são artefatos HTML — são parte legítima do texto.
+3. Incisos em algarismos romanos devem ter sido convertidos para ordinal por extenso.
+4. Siglas REAIS entre parênteses (ex: "(INC)", "(STF)") devem estar soletradas. ATENÇÃO: Palavras comuns entre parênteses como "(VETADO)", "(Revogado)", "(Incluído)" NÃO são siglas — são termos jurídicos e devem ser mantidos naturalmente.
+5. Siglas standalone conhecidas (ex: EMBRAFILME, DOU, STJ) podem ser mantidas intactas OU lidas por extenso — ambas as formas são aceitáveis.
 
+INSTRUÇÕES DE RESPOSTA:
+- Se o texto humanizado é uma conversão aceitável para áudio, responda EXATAMENTE: SIM
+- Se há erros GRAVES (conteúdo omitido, números não convertidos, artefatos HTML incluídos), responda: NÃO
+  (Na linha seguinte, justificativa curta.)
+- NÃO reprove por questões meramente estilísticas ou de preferência.
 
+===TEXTO ORIGINAL===
+{texto_original}
+
+===TEXTO HUMANIZADO===
+{texto_humanizado}
+"""
 
 class GeminiService:
     """
@@ -175,28 +194,77 @@ class GeminiService:
                 print(f'\n[ERRO] Falha ao comunicar com o Electron: {e}')
             return None
 
+    def _verificar_chunk(self, texto_original: str, texto_humanizado: str, chunk_num: int = 1) -> tuple[bool, str]:
+        """
+        Pede ao Gemini para auditar a própria resposta e dizer SIM (aprovado) ou NÃO (reprovado).
+        Returns: (bool aprovado, str justificativa)
+        """
+        try:
+            prompt_formatado = PROMPT_VERIFICACAO.format(
+                texto_original=texto_original,
+                texto_humanizado=texto_humanizado
+            )
+            payload = {
+                'text': prompt_formatado,
+                'prompt': '' # enviamos via texto para não usar o prompt default
+            }
+
+            print(f'  [Auditoria] Verificando qualidade da conversão da parte {chunk_num}...')
+            response = requests.post(f'{self.ipc_url}/humanize', json=payload, timeout=180)
+            
+            if response.status_code == 200:
+                data = response.json()
+                if data.get('success'):
+                    res_text = str(data['text']).strip()
+                    res_upper = res_text.upper()
+                    
+                    # LOG EXTRA: Mostrar cruamente o que o Gemini respondeu (cortado em 200 caracteres para não espalhar muito)
+                    print(f'    -> Resposta Bruta do Gemini: "{res_text[:200].replace(chr(10), " ")}..."')
+                    
+                    if res_upper.startswith('SIM') or 'SIM' in res_upper[:15]:
+                        return True, 'Aprovado pelo Gemini.'
+                    elif res_upper.startswith('NÃO') or res_upper.startswith('NAO') or 'NÃO' in res_upper[:15] or 'NAO' in res_upper[:15]:
+                        linhas = res_text.split('\n')
+                        motivo = linhas[1] if len(linhas) > 1 else res_text
+                        motivo = motivo.strip() or res_text[:60]
+                        return False, f'Reprovada: {motivo}'
+                    else:
+                        # Se respondeu diferente, consideramos reprovado por ambiguidade
+                        return False, f'Reprovada: Resposta ambígua ({res_text[:60]}...)'
+                else:
+                    print(f'    -> Erro IPC durante auditoria: {data.get("error")}')
+                    return False, f'Erro IPC: {data.get("error")}'
+            else:
+                return False, f'Erro HTTP {response.status_code}'
+
+        except Exception as e:
+            if 'LOGIN_REQUIRED' in str(e):
+                raise
+            return False, f'Erro Exception: {e}'
+
     def humanizar_texto(self, texto_bruto: str) -> Optional[str]:
         """
-        Humaniza o texto completo, dividindo em chunks se necessário.
-
-        Args:
-            texto_bruto: Texto original extraído da lei.
-
-        Returns:
-            Texto humanizado ou None em caso de erro.
+        Humaniza o texto completo, dividindo em chunks se necessário (c/ validação de qualidade).
         """
         print('\n--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---')
 
         if len(texto_bruto) > MAX_CHARS_GEMINI:
             return self._processar_chunks(texto_bruto)
         else:
+            chunks = dividir_texto_inteligente(texto_bruto, MAX_CHARS_GEMINI)
+            if len(chunks) == 1:
+                return self._processar_chunks(texto_bruto) # reutiliza logica principal
             resultado = self._humanizar_chunk(texto_bruto)
             if resultado:
-                print('[OK] Texto humanizado com sucesso!')
-            return resultado
+                aprovado, motivo = self._verificar_chunk(texto_bruto, resultado, 1)
+                if aprovado:
+                    print('[OK] Texto humanizado e validado com sucesso!')
+                    return resultado
+                print(f'[AVISO] Humanização simples reprovada na avaliação: {motivo}')
+                return resultado # fallback
 
     def _processar_chunks(self, texto: str) -> Optional[str]:
-        """Processa texto grande dividindo em chunks e humanizando sequencialmente."""
+        """Processa texto grande dividindo em chunks, humanizando sequencialmente com validação."""
         print(f'Texto grande detectado ({len(texto)} chars). Dividindo em partes...')
         chunks = dividir_texto_inteligente(texto, MAX_CHARS_GEMINI)
         total = len(chunks)
@@ -205,13 +273,31 @@ class GeminiService:
         textos_humanizados = []
 
         for i, chunk in enumerate(tqdm(chunks, desc='Humanizando', unit='parte'), 1):
-            # Até 2 tentativas por chunk (o Electron já tem retry interno)
-            resultado = None
-            for tentativa in range(2):
+            
+            resultado_aprovado = None
+            max_tentativas = 3
+
+            for tentativa in range(1, max_tentativas + 1):
                 try:
-                    resultado = self._humanizar_chunk(chunk, i, total)
-                    if resultado:
+                    print(f'\n  [Progresso] Humanizando parte {i}/{total} (Tentativa {tentativa}/{max_tentativas})')
+                    resultado_parcial = self._humanizar_chunk(chunk, i, total)
+                    
+                    if not resultado_parcial:
+                        time.sleep(3)
+                        continue
+
+                    aprovado, motivo = self._verificar_chunk(chunk, resultado_parcial, i)
+                    
+                    if aprovado:
+                        print(f'  [V] Parte {i} aprovada pela IA: {motivo}')
+                        resultado_aprovado = resultado_parcial
                         break
+                    else:
+                        print(f'  [X] Parte {i} reprovada pela IA: {motivo}')
+                        if tentativa < max_tentativas:
+                            print(f'      Refazendo a parte {i}...')
+                            time.sleep(4)
+
                 except Exception as e:
                     if 'LOGIN_REQUIRED' in str(e):
                         print('\n[ERRO FATAL] Usuário não está logado no Gemini.')
@@ -219,16 +305,15 @@ class GeminiService:
                         return None
                     raise
 
-                if tentativa == 0 and not resultado:
-                    print(f'\n  Tentando novamente a parte {i}...')
-                    time.sleep(3)
-
-            if not resultado:
-                print(f'\n[ERRO] Falha definitiva na parte {i}/{total}.')
+            if not resultado_aprovado:
+                print(f'\n[ERRO] Falha definitiva na parte {i}/{total} após {max_tentativas} tentativas (reprovada ou com erro).')
+                # Por segurança, podemos abortar ou seguir com o último resultado falho. 
+                # Abortando para garantir a qualidade estrita solicitada.
                 return None
 
-            textos_humanizados.append(resultado)
+            textos_humanizados.append(resultado_aprovado)
 
         texto_final = '\n\n'.join(textos_humanizados)
-        print(f'\n[OK] Texto humanizado com sucesso! ({total} partes)')
+        print(f'\n[OK] Texto humanizado e verificado com sucesso! ({total} partes)')
         return texto_final
+
