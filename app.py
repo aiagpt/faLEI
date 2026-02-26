@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request, jsonify, send_file
 import os
 import threading
 import zipfile
 import io
+from flask import Flask, render_template, request, jsonify, send_file
 from services.gemini_service import GeminiService
 from services.tts_service import TTSService
 from utils.web_scraper import buscar_lei_por_url
@@ -11,6 +11,12 @@ from database.job_db import JobDatabase
 
 app = Flask(__name__)
 db = JobDatabase()
+
+# Modo de teste: pula o TTS e só testa o Gemini
+SKIP_TTS = os.getenv('SKIP_TTS', '0') == '1'
+
+if SKIP_TTS:
+    print("[MODO TESTE] SKIP_TTS ativado — TTS será ignorado.")
 
 # Job atual em processamento
 current_job_id = None
@@ -40,7 +46,6 @@ def processar_lei(job_id: int, url: str):
                 current_job_id = None
                 return
             
-            # Salvar checkpoint
             db.update_job(job_id, checkpoint_text=texto_original, checkpoint_stage='fetched')
         else:
             print(f"[Job {job_id}] Retomando da etapa: {checkpoint_stage}")
@@ -56,9 +61,20 @@ def processar_lei(job_id: int, url: str):
                 current_job_id = None
                 return
             
-            # Salvar checkpoint
             db.update_job(job_id, checkpoint_humanized=texto_humanizado, checkpoint_stage='humanized')
-        
+
+        # ── MODO TESTE: pular TTS ──────────────────────────────
+        if SKIP_TTS:
+            db.update_job(job_id,
+                          status='complete',
+                          progress=100,
+                          message='Concluído! (modo teste — sem áudio)',
+                          filename=None,
+                          checkpoint_stage='complete')
+            current_job_id = None
+            return
+        # ──────────────────────────────────────────────────────
+
         # Helper para atualizar progresso
         def update_progress(percent, msg):
             db.update_job(job_id, status='generating', progress=percent, message=msg, checkpoint_stage='generating')
@@ -67,11 +83,9 @@ def processar_lei(job_id: int, url: str):
         db.update_job(job_id, status='generating', progress=40, message='Iniciando geração de áudio...', checkpoint_stage='generating')
         tts = TTSService(voice_name="pt-BR-Wavenet-B")
         
-        # Configurar diretório do Job
         job_dir = os.path.join("jobs", str(job_id))
         os.makedirs(job_dir, exist_ok=True)
         
-        # Nome do arquivo
         base_name = os.path.basename(url).replace('.html', '').replace('.htm', '')
         if not base_name: 
             base_name = f"job_{job_id}"
@@ -79,21 +93,17 @@ def processar_lei(job_id: int, url: str):
         nome_arquivo = os.path.join(job_dir, f"{base_name}.mp3")
         
         if tts.sintetizar_arquivo(texto_humanizado, nome_arquivo, progress_callback=update_progress):
-            # 4. Gerar timestamps por FRASE (rápido e eficiente!)
+            # 4. Gerar timestamps
             db.update_job(job_id, status='analyzing', progress=90, message='Gerando sincronização por frases...', checkpoint_stage='analyzing')
             
             try:
                 from utils.sentence_sync import generate_sentence_timestamps, save_timestamps
-                
-                print("📝 Gerando sincronização por frases...")
                 timestamps = generate_sentence_timestamps(nome_arquivo, texto_humanizado)
                 timestamp_file = nome_arquivo.replace('.mp3', '_timestamps.json')
                 save_timestamps(timestamps, timestamp_file)
-                
                 print(f"[OK] Sincronizacao por frases configurada!")
             except Exception as e:
                 print(f"[!] Erro ao gerar timestamps: {e}")
-                # Continuar mesmo sem timestamps
             
             db.update_job(job_id, status='complete', progress=100, message='Concluído!', filename=nome_arquivo, checkpoint_stage='complete')
         else:
@@ -103,6 +113,7 @@ def processar_lei(job_id: int, url: str):
         db.update_job(job_id, status='error', message=f'Erro: {str(e)}', error=str(e))
     finally:
         current_job_id = None
+
 
 @app.route('/')
 def index():

@@ -8,13 +8,13 @@ class Settings:
     """Configurações centralizadas do sistema."""
     
     def __init__(self):
-        # API Keys
-        self.gemini_api_key = os.getenv("GEMINI_API_KEY")
+        # Credenciais Google Cloud (para TTS)
         self.google_credentials_path = self._find_credentials()
         self.ssl_verify = os.getenv("SSL_VERIFY", "False").lower() == "true"
 
+        # Porta do servidor bridge Electron/Gemini
+        self.electron_ipc_port = int(os.getenv("ELECTRON_IPC_PORT", 5001))
         
-        # Validações
         if self.google_credentials_path:
             os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = self.google_credentials_path
     
@@ -26,9 +26,8 @@ class Settings:
         if os.path.exists(credentials_path):
             return credentials_path
         
-        # Procurar outros arquivos JSON
         for f in os.listdir(path_atual):
-            if f.endswith(".json") and f not in ["package.json", "tsconfig.json"]:
+            if f.endswith(".json") and f not in ["package.json", "tsconfig.json", "package-lock.json"]:
                 return os.path.join(path_atual, f)
         
         return None
@@ -37,13 +36,14 @@ class Settings:
         """Valida se as configurações necessárias estão presentes."""
         errors = []
         
-        if not self.gemini_api_key or self.gemini_api_key == "SUA_CHAVE_AQUI":
-            errors.append("GEMINI_API_KEY não configurada no .env")
-        
-        if not self.google_credentials_path:
-            errors.append("Arquivo de credenciais Google Cloud não encontrado")
+        # Gemini: agora usa automação web (não precisa de API key)
+        # TTS precisa do key.json — mas pode ser ignorado no modo SKIP_TTS
+        skip_tts = os.getenv('SKIP_TTS', '0') == '1'
+        if not skip_tts and not self.google_credentials_path:
+            errors.append("Arquivo de credenciais Google Cloud (key.json) não encontrado — necessário para o TTS")
         
         return errors
 
 # Instância global
 settings = Settings()
+
