@@ -5035,3 +5035,1131 @@ Texto dividido em 6 partes para síntese.
 
 [2026-02-26T15:47:29.060Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 12:47:29] "GET /download_zip/15 HTTP/1.1" 200 -
 
+[2026-02-26T16:22:18.295Z] Iniciando servidor Python Flask...
+[2026-02-26T16:22:18.464Z] Criando janela do Gemini (oculta)...
+[2026-02-26T16:22:18.500Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-02-26T16:22:19.542Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-26T16:22:19.578Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-02-26T16:22:20.068Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:20] "GET / HTTP/1.1" 200 -
+
+[2026-02-26T16:22:20.184Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:20] "GET / HTTP/1.1" 200 -
+
+[2026-02-26T16:22:27.292Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:27] "POST /process HTTP/1.1" 200 -
+
+[2026-02-26T16:22:27.601Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+[Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-02-26T16:22:27.603Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-02-26T16:22:27.616Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:22:28.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:28] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:29.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:29] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:30.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:30] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:31.299Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:31] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:32.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:32] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:33.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:33] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:34.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:34] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:35.300Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:35] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:36.304Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:36] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:37.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:37] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:38.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:38] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:39.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:39] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:40.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:40] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:41.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:41] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:42.296Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:42] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:43.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:43] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:44.271Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:22:44.313Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:44] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:45.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:45] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:46.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:46] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:47.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:47] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:48.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:48] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:49.298Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:49] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:50.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:50] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:51.311Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:51] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:52.309Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:52] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:53.300Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:53] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:54.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:54] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:55.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:55] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:56.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:56] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:57.299Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:57] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:58.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:58] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:22:59.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:22:59] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:00.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:00] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:01.309Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:01] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:02.312Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:02] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:03.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:03] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:04.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:04] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:05.300Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:05] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:05.995Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:23:06.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:06] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:07.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:07] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:08.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:08] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:09.304Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:09] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:10.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:10] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:11.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:11] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:12.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:12] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:13.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:13] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:14.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:14] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:15.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:15] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:16.312Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:16] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:17.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:17] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:18.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:18] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:19.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:19] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:20.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:20] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:21.298Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:21] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:21.691Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:23:22.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:22] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:23.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:23] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:24.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:24] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:25.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:25] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:26.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:26] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:27.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:27] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:28.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:28] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:29.298Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:29] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:30.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:30] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:31.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:31] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:32.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:32] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:33.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:33] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:34.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:34] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:35.300Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:35] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:36.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:36] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:37.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:37] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:38.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:38] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:39.299Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:39] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:40.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:40] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:41.312Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:41] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:42.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:42] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:42.465Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:23:43.309Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:43] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:44.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:44] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:45.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:45] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:46.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:46] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:47.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:47] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:48.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:48] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:49.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:49] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:50.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:50] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:51.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:51] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:52.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:52] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:53.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:53] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:54.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:54] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:55.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:55] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:56.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:56] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:57.302Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:57] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:58.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:58] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:23:59.152Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:23:59.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:23:59] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:00.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:00] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:01.309Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:01] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:02.305Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:02] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:03.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:03] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:04.308Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:04] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:05.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:05] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:06.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:06] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:07.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:07] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:08.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:08] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:09.306Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:09] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:10.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:10] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:11.301Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:11] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:12.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:12] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:13.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:13] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:14.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:14] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:15.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:15] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:16.307Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:16] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:17.304Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:17] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:24:17.852Z] Flask Log: Humanizando:   0%|          | 0/1 [01:50<?, ?parte/s]
+
+[2026-02-26T16:24:18.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:24:18] "GET /status/16 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:23.911Z] Iniciando servidor Python Flask...
+[2026-02-26T16:26:24.021Z] Criando janela do Gemini (oculta)...
+[2026-02-26T16:26:24.072Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-02-26T16:26:24.884Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-26T16:26:24.910Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+Press CTRL+C to quit
+
+[2026-02-26T16:26:25.101Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:25] "GET / HTTP/1.1" 200 -
+
+[2026-02-26T16:26:25.169Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:25] "GET / HTTP/1.1" 200 -
+
+[2026-02-26T16:26:31.409Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:31] "POST /process HTTP/1.1" 200 -
+
+[2026-02-26T16:26:31.753Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+[Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-02-26T16:26:31.754Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-02-26T16:26:31.756Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:26:32.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:32] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:33.431Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:33] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:34.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:34] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:35.419Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:35] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:36.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:36] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:37.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:37] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:38.416Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:38] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:39.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:39] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:40.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:40] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:41.419Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:41] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:42.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:42] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:43.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:43] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:44.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:44] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:45.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:45] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:46.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:46] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:47.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:47] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:48.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:48] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:49.426Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:49] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:50.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:50] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:51.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:51] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:52.419Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:52] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:53.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:53] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:54.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:54] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:55.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:55] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:56.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:56] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:57.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:57] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:58.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:58] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:26:59.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:26:59] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:00.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:00] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:01.433Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:01] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:02.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:02] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:03.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:03] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:04.433Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:04] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:05.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:05] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:06.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:06] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:07.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:07] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:08.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:08] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:09.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:09] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:10.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:10] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:11.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:11] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:12.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:12] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:12.707Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:27:13.418Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:13] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:14.432Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:14] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:15.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:15] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:16.440Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:16] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:17.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:17] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:18.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:18] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:19.426Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:19] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:20.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:20] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:21.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:21] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:22.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:22] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:23.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:23] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:24.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:24] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:25.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:25] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:26.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:26] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:27.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:27] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:28.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:28] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:29.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:29] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:30.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:30] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:31.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:31] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:32.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:32] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:33.406Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:27:33.419Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:33] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:34.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:34] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:35.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:35] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:36.430Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:36] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:37.419Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:37] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:38.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:38] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:39.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:39] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:40.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:40] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:41.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:41] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:42.419Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:42] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:43.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:43] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:44.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:44] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:45.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:45] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:46.418Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:46] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:47.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:47] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:48.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:48] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:49.149Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:27:49.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:49] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:50.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:50] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:51.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:51] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:52.430Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:52] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:53.433Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:53] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:54.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:54] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:55.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:55] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:56.430Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:56] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:57.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:57] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:58.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:58] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:27:59.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:27:59] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:00.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:00] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:01.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:01] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:02.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:02] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:03.434Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:03] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:04.417Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:04] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:05.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:05] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:06.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:06] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:07.418Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:07] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:08.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:08] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:09.426Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:09] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:10.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:10] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:11.415Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:11] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:12.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:12] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:13.435Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:13] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:14.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:14] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:15.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:15] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:16.431Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:16] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:17.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:17] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:18.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:18] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:19.429Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:19] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:20.426Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:20] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:21.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:21] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:22.428Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:22] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:23.428Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:23] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:24.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:24] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:25.430Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:25] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:26.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:26] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:27.425Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:27] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:28.425Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:28] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:29.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:29] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:30.030Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:28:30.426Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:30] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:31.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:31] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:32.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:32] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:33.430Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:33] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:34.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:34] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:35.431Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:35] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:36.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:36] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:37.433Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:37] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:38.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:38] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:39.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:39] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:40.428Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:40] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:41.421Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:41] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:42.426Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:42] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:43.420Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:43] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:44.427Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:44] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:45.429Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:45] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:45.702Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:28:46.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:46] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:47.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:47] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:48.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:48] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:49.428Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:49] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:50.429Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:50] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:51.427Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:51] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:52.417Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:52] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:53.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:53] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:54.423Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:54] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:55.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:55] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:56.424Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:56] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:57.437Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:57] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:58.422Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:58] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:28:59.346Z] Flask Log: Humanizando:   0%|          | 0/1 [02:27<?, ?parte/s]
+
+[2026-02-26T16:28:59.436Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:28:59] "GET /status/17 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:11.156Z] Iniciando servidor Python Flask...
+[2026-02-26T16:37:11.308Z] Criando janela do Gemini (oculta)...
+[2026-02-26T16:37:11.363Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-02-26T16:37:12.569Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-26T16:37:12.589Z] Flask Access: WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.3.129.109:5000
+
+[2026-02-26T16:37:12.589Z] Flask Log: Press CTRL+C to quit
+
+[2026-02-26T16:37:12.897Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:12] "GET / HTTP/1.1" 200 -
+
+[2026-02-26T16:37:12.943Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:12] "GET / HTTP/1.1" 200 -
+
+[2026-02-26T16:37:19.303Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:19] "POST /process HTTP/1.1" 200 -
+
+[2026-02-26T16:37:19.595Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+[Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-02-26T16:37:19.596Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-02-26T16:37:19.598Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:37:20.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:20] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:21.309Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:21] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:22.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:22] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:23.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:23] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:24.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:24] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:25.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:25] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:26.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:26] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:27.326Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:27] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:28.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:28] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:29.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:29] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:30.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:30] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:31.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:31] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:32.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:32] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:33.340Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:33] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:34.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:34] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:35.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:35] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:36.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:36] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:37.330Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:37] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:38.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:38] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:39.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:39] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:40.313Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:40] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:41.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:41] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:42.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:42] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:43.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:43] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:43.362Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [00:23<?, ?parte/s]
+[2026-02-26T16:37:43.365Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:37:44.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:44] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:45.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:45] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:46.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:46] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:47.311Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:47] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:48.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:48] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:49.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:49] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:50.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:50] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:51.311Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:51] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:52.326Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:52] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:53.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:53] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:54.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:54] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:55.325Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:55] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:56.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:56] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:57.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:57] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:58.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:58] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:37:59.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:37:59] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:00.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:00] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:01.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:01] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:02.117Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [00:42<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [00:42<?, ?parte/s]
+[2026-02-26T16:38:02.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:02] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:03.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:03] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:04.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:04] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:05.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:05] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:06.118Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [00:46<?, ?parte/s]
+[2026-02-26T16:38:06.150Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:38:06.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:06] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:07.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:07] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:08.313Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:08] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:09.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:09] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:10.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:10] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:11.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:11] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:12.326Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:12] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:13.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:13] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:14.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:14] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:15.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:15] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:16.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:16] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:17.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:17] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:18.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:18] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:19.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:19] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:20.328Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:20] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:21.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:21] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:21.847Z] Flask Log:                                                      
+[2026-02-26T16:38:21.849Z] Flask Log: Humanizando:   0%|          | 0/1 [01:02<?, ?parte/s]
+[2026-02-26T16:38:21.851Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:38:22.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:22] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:23.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:23] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:24.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:24] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:25.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:25] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:26.325Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:26] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:27.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:27] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:28.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:28] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:29.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:29] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:30.312Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:30] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:31.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:31] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:32.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:32] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:33.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:33] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:34.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:34] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:35.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:35] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:35.519Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [01:15<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [01:15<?, ?parte/s]
+[2026-02-26T16:38:36.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:36] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:37.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:37] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:38.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:38] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:39.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:39] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:39.519Z] Flask Log:                                                      
+[2026-02-26T16:38:39.521Z] Flask Log: Humanizando:   0%|          | 0/1 [01:19<?, ?parte/s]
+[2026-02-26T16:38:39.523Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:38:40.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:40] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:41.326Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:41] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:42.326Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:42] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:43.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:43] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:44.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:44] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:45.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:45] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:46.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:46] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:47.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:47] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:48.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:48] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:49.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:49] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:50.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:50] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:51.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:51] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:52.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:52] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:53.200Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [01:33<?, ?parte/s]
+[2026-02-26T16:38:53.203Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:38:53.327Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:53] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:54.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:54] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:55.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:55] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:56.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:56] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:57.330Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:57] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:58.310Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:58] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:38:59.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:38:59] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:00.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:00] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:01.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:01] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:02.317Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:02] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:03.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:03] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:04.315Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:04] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:05.328Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:05] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:06.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:06] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:07.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:07] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:08.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:08] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:09.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:09] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:10.313Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:10] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:11.313Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:11] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:12.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:12] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:13.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:13] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:14.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:14] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:15.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:15] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:16.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:16] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:17.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:17] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:18.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:18] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:19.323Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:19] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:20.316Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:20] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:21.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:21] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:22.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:22] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:23.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:23] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:24.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:24] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:25.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:25] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:26.318Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:26] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:27.314Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:27] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:28.321Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:28] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:29.324Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:29] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:30.322Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:30] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:31.320Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:31] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:32.326Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:32] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:39:33.085Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [02:13<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [02:13<?, ?parte/s]
+[2026-02-26T16:39:33.086Z] Flask Log: Humanizando:   0%|          | 0/1 [02:13<?, ?parte/s]
+
+[2026-02-26T16:39:33.319Z] Flask Access: 127.0.0.1 - - [26/Feb/2026 13:39:33] "GET /status/18 HTTP/1.1" 200 -
+
+[2026-02-26T16:50:09.285Z] Iniciando servidor Python Flask...
+[2026-02-26T16:50:09.433Z] Criando janela do Gemini (oculta)...
+[2026-02-26T16:50:09.502Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-02-26T16:50:10.588Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-26T16:50:18.087Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+[OK] Lei extraida com sucesso! (2590 caracteres)
+[Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-02-26T16:50:18.088Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-02-26T16:50:18.090Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:51:43.403Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [01:25<?, ?parte/s]
+[2026-02-26T16:51:43.408Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:51:58.086Z] Flask Log:                                                      
+[2026-02-26T16:51:58.087Z] Flask Log: Humanizando:   0%|          | 0/1 [01:39<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [01:39<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [01:39<?, ?parte/s]
+[2026-02-26T16:52:02.088Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [01:44<?, ?parte/s]
+[2026-02-26T16:52:02.091Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:52:17.771Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [01:59<?, ?parte/s]
+[2026-02-26T16:52:17.785Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:52:31.447Z] Flask Log:                                                      
+[2026-02-26T16:52:31.449Z] Flask Log: Humanizando:   0%|          | 0/1 [02:13<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [02:13<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [02:13<?, ?parte/s]
+[2026-02-26T16:52:35.450Z] Flask Log:                                                      
+[2026-02-26T16:52:35.451Z] Flask Log: Humanizando:   0%|          | 0/1 [02:17<?, ?parte/s]
+[2026-02-26T16:52:35.478Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:52:50.126Z] Flask Log:                                                      Humanizando:   0%|          | 0/1 [02:32<?, ?parte/s]
+[2026-02-26T16:52:50.129Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T16:53:03.785Z] Flask Log:                                                      
+[2026-02-26T16:53:03.786Z] Flask Log: Humanizando:   0%|          | 0/1 [02:45<?, ?parte/s]                                                     Humanizando:   0%|          | 0/1 [02:45<?, ?parte/s]                                                     
+[2026-02-26T16:53:03.786Z] Flask Log: Humanizando:   0%|          | 0/1 [02:45<?, ?parte/s]Humanizando:   0%|          | 0/1 [02:45<?, ?parte/s]
+
+[2026-02-26T17:00:23.553Z] Iniciando servidor Python Flask...
+[2026-02-26T17:00:23.698Z] Criando janela do Gemini (oculta)...
+[2026-02-26T17:00:23.772Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-02-26T17:00:24.834Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+
+[2026-02-26T17:00:24.838Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-02-26T17:00:24.840Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-02-26T17:00:24.841Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-26T17:00:55.386Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-02-26T17:00:55.647Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-02-26T17:00:55.680Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-02-26T17:00:55.680Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-02-26T17:00:55.681Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-02-26T17:00:55.682Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-02-26T17:00:55.685Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:01:00.720Z] [Gemini] Executando script de automação...
+[2026-02-26T17:01:11.329Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-02-26T17:01:11.337Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-02-26T17:01:11.342Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:01:16.459Z] [Gemini] Executando script de automação...
+[2026-02-26T17:01:27.100Z] [Gemini] Script retornou: "NÃO
+O Texto Humanizado violou a Regra 2 ao incluir o conteúdo descritivo das Tabelas 1 e 2, que deveriam ter sido ignorados...."
+[2026-02-26T17:01:27.102Z] Flask Output:     -> Resposta Bruta do Gemini: "NÃO O Texto Humanizado violou a Regra 2 ao incluir o conteúdo descritivo das Tabelas 1 e 2, que deveriam ter sido ignorados...."
+
+[2026-02-26T17:01:27.102Z] Flask Output:   [X] Parte 1 reprovada pela IA: Reprovada: O Texto Humanizado violou a Regra 2 ao incluir o conteúdo descritivo das Tabelas 1 e 2, que deveriam ter sido ignorados.
+      Refazendo a parte 1...
+
+[2026-02-26T17:01:31.103Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 2/3)
+
+[2026-02-26T17:01:31.106Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:01:36.168Z] [Gemini] Executando script de automação...
+[2026-02-26T17:01:46.779Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-02-26T17:01:46.783Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-02-26T17:01:46.808Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:01:51.868Z] [Gemini] Executando script de automação...
+[2026-02-26T17:02:01.433Z] [Gemini] Script retornou: "NÃO
+O Texto Humanizado descumpriu a Regra 2 ao incluir o conteúdo descritivo das tabelas 1 e 2 ("Presidência da República...", "Mensagem de veto..."),..."
+[2026-02-26T17:02:01.437Z] Flask Output:     -> Resposta Bruta do Gemini: "NÃO O Texto Humanizado descumpriu a Regra 2 ao incluir o conteúdo descritivo das tabelas 1 e 2 ("Presidência da República...", "Mensagem de veto..."), que deveriam ter sido ignorados. Além disso, desc..."
+
+[2026-02-26T17:02:01.438Z] Flask Output:   [X] Parte 1 reprovada pela IA: Reprovada: O Texto Humanizado descumpriu a Regra 2 ao incluir o conteúdo descritivo das tabelas 1 e 2 ("Presidência da República...", "Mensagem de veto..."), que deveriam ter sido ignorados. Além disso, descumpriu a Regra 4 ao expandir a sigla entre parênteses "(VETADO)" como "Abre aspas, VETADO, fecha aspas" em vez de soletrá-la (V E T A D O) e não manteve a sigla original DOU em sua forma intacta (Regra 5), convertendo-a para "Diário Oficial da União".
+      Refazendo a parte 1...
+
+[2026-02-26T17:02:05.438Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 3/3)
+
+[2026-02-26T17:02:05.443Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:02:10.517Z] [Gemini] Executando script de automação...
+[2026-02-26T17:02:21.148Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-02-26T17:02:21.152Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-02-26T17:02:21.156Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:02:26.353Z] [Gemini] Executando script de automação...
+[2026-02-26T17:02:36.951Z] [Gemini] Script retornou: "NÃO
+O Texto Humanizado descumpriu a Regra 2 ao processar e incluir o conteúdo textual das Tabelas 1 e 2, que deveriam ter sido ignorados...."
+[2026-02-26T17:02:36.953Z] Flask Output:     -> Resposta Bruta do Gemini: "NÃO O Texto Humanizado descumpriu a Regra 2 ao processar e incluir o conteúdo textual das Tabelas 1 e 2, que deveriam ter sido ignorados...."
+
+[2026-02-26T17:02:36.954Z] Flask Output:   [X] Parte 1 reprovada pela IA: Reprovada: O Texto Humanizado descumpriu a Regra 2 ao processar e incluir o conteúdo textual das Tabelas 1 e 2, que deveriam ter sido ignorados.
+
+[ERRO] Falha definitiva na parte 1/1 após 3 tentativas (reprovada ou com erro).
+
+[2026-02-26T17:02:36.954Z] Flask Log: Humanizando:   0%|          | 0/1 [01:41<?, ?parte/s]
+
+[2026-02-26T17:06:02.856Z] Iniciando servidor Python Flask...
+[2026-02-26T17:06:03.004Z] Criando janela do Gemini (oculta)...
+[2026-02-26T17:06:03.077Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-02-26T17:06:04.122Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+
+[2026-02-26T17:06:04.124Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-02-26T17:06:04.125Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-02-26T17:06:04.125Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-02-26T17:06:17.300Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-02-26T17:06:17.665Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-02-26T17:06:17.696Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-02-26T17:06:17.696Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-02-26T17:06:17.697Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-02-26T17:06:17.697Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-02-26T17:06:17.699Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:06:22.750Z] [Gemini] Executando script de automação...
+[2026-02-26T17:06:39.467Z] [Gemini] Script retornou: "Presidência da República, Casa Civil, Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-02-26T17:06:39.472Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-02-26T17:06:39.477Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-02-26T17:06:44.584Z] [Gemini] Executando script de automação...
+[2026-02-26T17:06:53.219Z] [Gemini] Script retornou: "SIM..."
+[2026-02-26T17:06:53.222Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+
+[2026-02-26T17:06:53.223Z] Flask Output:   [V] Parte 1 aprovada pela IA: Aprovado pelo Gemini.
+
+[2026-02-26T17:06:53.227Z] Flask Log: Humanizando: 100%|██████████| 1/1 [00:35<00:00, 35.53s/parte]
+[2026-02-26T17:06:53.228Z] Flask Log: Humanizando: 100%|██████████| 1/1 [00:35<00:00, 35.53s/parte]
+
+[2026-02-26T17:06:53.229Z] Flask Output: 
+[OK] Texto humanizado e verificado com sucesso! (1 partes)
+
