@@ -3,6 +3,5 @@ requests
 beautifulsoup4
 python-dotenv
 google-cloud-texttospeech
-google-genai
 tqdm
 urllib3
