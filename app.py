@@ -2,6 +2,7 @@ import os
 import threading
 import zipfile
 import io
+import hashlib
 from flask import Flask, render_template, request, jsonify, send_file
 from services.gemini_service import GeminiService
 from services.tts_service import TTSService
@@ -38,22 +39,6 @@ def processar_lei(job_id: int, url: str):
         texto_original = job.get('checkpoint_text')
         texto_humanizado = job.get('checkpoint_humanized')
         checkpoint_stage = job.get('checkpoint_stage')
-        
-        # 1. Buscar lei (ou usar checkpoint)
-        if not texto_original:
-            db.update_job(job_id, status='fetching', progress=10, message='Buscando lei...', checkpoint_stage='fetching')
-            try:
-                texto_original = buscar_lei_por_url(url)
-                if not texto_original:
-                     raise Exception("Conteúdo da lei não encontrado (procure por 'Art.' ou 'Artigo').")
-            except Exception as e:
-                db.update_job(job_id, status='error', message=str(e), error=str(e))
-                current_job_id = None
-                return
-            
-            db.update_job(job_id, checkpoint_text=texto_original, checkpoint_stage='fetched')
-        else:
-            print(f"[Job {job_id}] Retomando da etapa: {checkpoint_stage}")
         
         # 2. Humanizar (ou usar checkpoint)
         if not texto_humanizado:
@@ -174,8 +159,44 @@ def process():
     if errors:
         return jsonify({'error': f'Configuração inválida: {", ".join(errors)}'}), 400
     
+    # Buscar lei de forma síncrona para checar duplicata antes de criar o Job
+    try:
+        texto_original = buscar_lei_por_url(url)
+        if not texto_original:
+            return jsonify({'error': "Conteúdo da lei não encontrado (procure por 'Art.' ou 'Artigo')."}), 400
+            
+        # Verificar duplicata por hash
+        text_hash = hashlib.md5(texto_original.encode('utf-8')).hexdigest()
+        existing_job = db.find_completed_job_by_hash(text_hash)
+        if existing_job and existing_job.get('filename'):
+            # Retorna imediatamente o job antigo com flag especial pro frontend
+            return jsonify({
+                'success': True,
+                'is_duplicate': True,
+                'original_job_id': existing_job['id'],
+                'message': 'Áudio desta lei já foi gerado anteriormente!'
+            })
+            
+    except Exception as e:
+        return jsonify({'error': f"Erro ao buscar lei: {str(e)}"}), 500
+
+    # Determinar nome baseado na URL
+    import urllib.parse
+    parsed_url = urllib.parse.urlparse(url)
+    basename = os.path.basename(parsed_url.path)
+    law_name = basename.replace('.html', '').replace('.htm', '')
+    if law_name.lower().startswith('l'):
+        law_name = 'Lei ' + law_name[1:]
+    elif law_name:
+        law_name = law_name.capitalize()
+    else:
+        law_name = "Lei Desconhecida"
+        
     # Criar job no banco
     job_id = db.create_job(url)
+    
+    # Salvar o checkpoint com o texto e o hash já buscado (economiza 1 request)
+    db.update_job(job_id, checkpoint_text=texto_original, checkpoint_stage='fetched', text_hash=text_hash, law_name=law_name)
     
     # Processar em background
     thread = threading.Thread(target=processar_lei, args=(job_id, url))
@@ -198,6 +219,7 @@ def status(job_id):
         'progress': job['progress'],
         'message': job['message'],
         'filename': job['filename'],
+        'law_name': job.get('law_name'),
         'created_at': job['created_at'],
         'completed_at': job['completed_at'],
         'error': job['error']
@@ -252,29 +274,54 @@ def download_zip(job_id):
         download_name=zip_filename
     )
 
+@app.route('/audio/<int:job_id>')
+def stream_audio(job_id):
+    """Retorna o arquivo de áudio MP3 para ser tocado no navegador."""
+    job = db.get_job(job_id)
+    if not job or not job.get('filename'):
+        return jsonify({'error': 'Áudio não encontrado no job'}), 404
+        
+    audio_path = job['filename']
+    if not os.path.exists(audio_path):
+        return jsonify({'error': 'Arquivo de áudio não encontrado no servidor'}), 404
+        
+    return send_file(audio_path, mimetype='audio/mpeg')
+
 @app.route('/delete/<int:job_id>', methods=['DELETE'])
 def delete(job_id):
-    """Deleta um job."""
+    """Deleta um job e todos os seus clones (esquece que a lei existiu)."""
     job = db.get_job(job_id)
-    if job and job['filename']:
-        # Deletar diretório do job
-        try:
-            # Tentar extrair diretório do arquivo (jobs/ID/)
-            file_path = job['filename']
-            if os.path.sep in file_path:
-                job_dir = os.path.dirname(file_path)
-                import shutil
-                if os.path.exists(job_dir) and "jobs" in job_dir:
-                    shutil.rmtree(job_dir)
-            
-            # Fallback para deletar apenas arquivo se estiver na raiz (jobs antigos)
-            elif os.path.exists(file_path):
-                os.remove(file_path)
+    if not job:
+        return jsonify({'success': True})
+        
+    text_hash = job.get('text_hash')
+    
+    if text_hash:
+        jobs_to_delete = db.get_jobs_by_hash(text_hash)
+    else:
+        jobs_to_delete = [job]
+        
+    for j in jobs_to_delete:
+        if j.get('filename'):
+            # Deletar diretório do job
+            try:
+                # Tentar extrair diretório do arquivo (jobs/ID/)
+                file_path = j['filename']
+                if os.path.sep in file_path:
+                    job_dir = os.path.dirname(file_path)
+                    import shutil
+                    if os.path.exists(job_dir) and "jobs" in job_dir:
+                        shutil.rmtree(job_dir)
                 
-        except Exception as e:
-            print(f"Erro ao deletar arquivos: {e}")
-            
-    db.delete_job(job_id)
+                # Fallback para deletar apenas arquivo se estiver na raiz (jobs antigos)
+                elif os.path.exists(file_path):
+                    os.remove(file_path)
+                    
+            except Exception as e:
+                print(f"Erro ao deletar arquivos: {e}")
+                
+        db.delete_job(j['id'])
+        
     return jsonify({'success': True})
 
 @app.route('/jobs/clear', methods=['DELETE'])
@@ -361,7 +408,44 @@ if __name__ == '__main__':
         cursor.execute("ALTER TABLE jobs ADD COLUMN checkpoint_humanized TEXT")
         cursor.execute("ALTER TABLE jobs ADD COLUMN checkpoint_stage TEXT")
         conn.commit()
-        print("[OK] Banco atualizado!")
+        print("[OK] Banco atualizado com checkpoints!")
+        
+    if 'text_hash' not in columns:
+        print("\n[INFO] Atualizando banco de dados com text_hash...")
+        cursor.execute("ALTER TABLE jobs ADD COLUMN text_hash TEXT")
+        conn.commit()
+        
+        print("[INFO] Calculando hash das leis já existentes...")
+        cursor.execute("SELECT id, checkpoint_text FROM jobs WHERE checkpoint_text IS NOT NULL AND status = 'complete'")
+        import hashlib
+        rows = cursor.fetchall()
+        for r_id, r_text in rows:
+            r_hash = hashlib.md5(r_text.encode('utf-8')).hexdigest()
+            cursor.execute("UPDATE jobs SET text_hash = ? WHERE id = ?", (r_hash, r_id))
+        conn.commit()
+        print("[OK] Hashs calculados!")
+        
+    if 'law_name' not in columns:
+        print("\n[INFO] Atualizando banco de dados com law_name...")
+        cursor.execute("ALTER TABLE jobs ADD COLUMN law_name TEXT")
+        conn.commit()
+        
+        # Preencher law_name baseados na URL preexistentes
+        import urllib.parse
+        cursor.execute("SELECT id, url FROM jobs")
+        rows = cursor.fetchall()
+        for r_id, r_url in rows:
+            parsed = urllib.parse.urlparse(r_url)
+            base = os.path.basename(parsed.path).replace('.html', '').replace('.htm', '')
+            if base.lower().startswith('l'):
+                l_name = 'Lei ' + base[1:]
+            elif base:
+                l_name = base.capitalize()
+            else:
+                l_name = "Lei Desconhecida"
+            cursor.execute("UPDATE jobs SET law_name = ? WHERE id = ?", (l_name, r_id))
+        conn.commit()
+        print("[OK] Nomes de leis gerados retroativamente!")
     
     conn.close()
     
