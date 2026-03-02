@@ -29,7 +29,9 @@ class JobDatabase:
                 error TEXT,
                 checkpoint_text TEXT,
                 checkpoint_humanized TEXT,
-                checkpoint_stage TEXT
+                checkpoint_stage TEXT,
+                text_hash TEXT,
+                law_name TEXT
             )
         ''')
         
@@ -60,7 +62,7 @@ class JobDatabase:
     def update_job(self, job_id: int, status: str = None, progress: int = None, 
                    message: str = None, filename: str = None, error: str = None,
                    checkpoint_text: str = None, checkpoint_humanized: str = None, 
-                   checkpoint_stage: str = None):
+                   checkpoint_stage: str = None, text_hash: str = None, law_name: str = None):
         """Atualiza um job."""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
@@ -103,6 +105,14 @@ class JobDatabase:
         if checkpoint_stage is not None:
             updates.append("checkpoint_stage = ?")
             params.append(checkpoint_stage)
+            
+        if text_hash is not None:
+            updates.append("text_hash = ?")
+            params.append(text_hash)
+            
+        if law_name is not None:
+            updates.append("law_name = ?")
+            params.append(law_name)
         
         updates.append("updated_at = ?")
         params.append(datetime.now().isoformat())
@@ -129,6 +139,34 @@ class JobDatabase:
         if row:
             return dict(row)
         return None
+        
+    def find_completed_job_by_hash(self, text_hash: str) -> Optional[Dict]:
+        """Tenta encontrar um job concluído que tenha exatamente o mesmo hash de texto."""
+        conn = sqlite3.connect(self.db_path)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        
+        cursor.execute("SELECT * FROM jobs WHERE text_hash = ? AND status = 'complete' ORDER BY created_at DESC LIMIT 1", (text_hash,))
+        row = cursor.fetchone()
+        
+        conn.close()
+        
+        if row:
+            return dict(row)
+        return None
+        
+    def get_jobs_by_hash(self, text_hash: str) -> List[Dict]:
+        """Obtém todos os jobs com o mesmo hash."""
+        conn = sqlite3.connect(self.db_path)
+        conn.row_factory = sqlite3.Row
+        cursor = conn.cursor()
+        
+        cursor.execute("SELECT * FROM jobs WHERE text_hash = ?", (text_hash,))
+        
+        rows = cursor.fetchall()
+        conn.close()
+        
+        return [dict(row) for row in rows]
     
     def get_all_jobs(self, limit: int = 50) -> List[Dict]:
         """Obtém todos os jobs, ordenados por data de criação."""

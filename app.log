@@ -6163,3 +6163,590 @@ Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
 [2026-02-26T17:06:53.229Z] Flask Output: 
 [OK] Texto humanizado e verificado com sucesso! (1 partes)
 
+[2026-03-02T16:39:05.358Z] Iniciando servidor Python Flask...
+[2026-03-02T16:39:05.460Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:39:05.572Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:39:07.560Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:39:07.565Z] Flask Output: 
+[INFO] Atualizando banco de dados com text_hash...
+
+[2026-03-02T16:39:07.592Z] Flask Output: [INFO] Calculando hash das leis já existentes...
+[OK] Hashs calculados!
+
+Pressione Ctrl+C para parar o servidor
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:39:32.014Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:39:32.462Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:39:32.465Z] Flask Output: [Job 13] Lei idêntica detectada! Retornando áudio do Job #8.
+
+[2026-03-02T16:40:45.445Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T16:40:45.734Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T16:40:45.737Z] Flask Output: [Job 14] Lei idêntica detectada! Retornando áudio do Job #12.
+
+[2026-03-02T16:43:28.573Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:43:28.846Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:43:28.848Z] Flask Output: [Job 15] Lei idêntica detectada! Retornando áudio do Job #8.
+
+[2026-03-02T16:44:32.001Z] Iniciando servidor Python Flask...
+[2026-03-02T16:44:32.060Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:44:32.093Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:44:33.256Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:44:33.257Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:44:33.258Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:44:57.806Z] Iniciando servidor Python Flask...
+[2026-03-02T16:44:57.875Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:44:57.917Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:44:59.167Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+
+[2026-03-02T16:44:59.172Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:44:59.174Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:44:59.177Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:45:07.475Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:45:07.821Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:45:07.823Z] Flask Output: [Job 16] Lei idêntica detectada! Retornando áudio do Job #8.
+
+[2026-03-02T16:46:07.877Z] Iniciando servidor Python Flask...
+[2026-03-02T16:46:07.934Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:46:07.965Z] [IPC Server] Erro: listen EADDRINUSE: address already in use 127.0.0.1:5001
+[2026-03-02T16:46:08.886Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:46:08.887Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:46:08.888Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:46:13.837Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:46:14.118Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:46:14.136Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-03-02T16:46:14.137Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-03-02T16:46:14.138Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-03-02T16:46:14.139Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-03-02T16:46:14.140Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:46:19.193Z] [Gemini] Executando script de automação...
+[2026-03-02T16:46:29.773Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-03-02T16:46:38.996Z] Iniciando servidor Python Flask...
+[2026-03-02T16:46:39.061Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:46:39.106Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:46:40.059Z] Flask Output: [MODO TESTE] SKIP_TTS ativado — TTS será ignorado.
+
+[2026-03-02T16:46:40.064Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:46:40.067Z] Flask Output: 
+[INFO] Encontrados 1 job(s) pendente(s). Retomando...
+   -> Retomando Job #1: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:46:40.068Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:46:40.070Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+[Job 1] Retomando da etapa: humanizing
+
+[2026-03-02T16:46:40.090Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-03-02T16:46:40.091Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-03-02T16:46:40.097Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-03-02T16:46:40.097Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-03-02T16:46:40.100Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:46:45.156Z] [Gemini] Executando script de automação...
+[2026-03-02T16:46:45.338Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:46:45.630Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:46:45.646Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-03-02T16:46:45.647Z] Flask Log: 
+Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s][A
+[2026-03-02T16:46:45.648Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-03-02T16:46:59.795Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-03-02T16:46:59.796Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:46:59.798Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-03-02T16:47:04.844Z] [Gemini] Executando script de automação...
+[2026-03-02T16:47:22.466Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-03-02T16:47:22.467Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:47:22.469Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-03-02T16:47:27.544Z] [Gemini] Executando script de automação...
+[2026-03-02T16:47:36.122Z] [Gemini] Script retornou: "SIM..."
+[2026-03-02T16:47:36.146Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:47:36.150Z] Flask Log: Humanizando: 100%|██████████| 1/1 [00:56<00:00, 56.05s/parte]Humanizando: 100%|██████████| 1/1 [00:56<00:00, 56.05s/parte]
+
+[2026-03-02T16:47:36.188Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+  [V] Parte 1 aprovada pela IA: Aprovado pelo Gemini.
+
+[OK] Texto humanizado e verificado com sucesso! (1 partes)
+
+[2026-03-02T16:47:41.256Z] [Gemini] Executando script de automação...
+[2026-03-02T16:47:49.817Z] [Gemini] Script retornou: "SIM..."
+[2026-03-02T16:47:49.818Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+
+[2026-03-02T16:47:49.819Z] Flask Output:   [V] Parte 1 aprovada pela IA: Aprovado pelo Gemini.
+
+[OK] Texto humanizado e verificado com sucesso! (1 partes)
+
+[2026-03-02T16:47:49.819Z] Flask Log: 
+Humanizando: 100%|██████████| 1/1 [01:04<00:00, 64.17s/parte][AHumanizando: 100%|██████████| 1/1 [01:04<00:00, 64.17s/parte]
+
+[2026-03-02T16:48:52.838Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:48:53.143Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:48:53.158Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-03-02T16:48:53.158Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-03-02T16:48:53.160Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-03-02T16:48:53.160Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-03-02T16:48:53.160Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:48:58.210Z] [Gemini] Executando script de automação...
+[2026-03-02T16:49:06.502Z] Iniciando servidor Python Flask...
+[2026-03-02T16:49:06.579Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:49:06.629Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:49:08.282Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:49:08.284Z] Flask Output: 
+[INFO] Encontrados 1 job(s) pendente(s). Retomando...
+   -> Retomando Job #3: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:49:08.285Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:49:08.287Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:49:08.287Z] Flask Output: [Job 3] Retomando da etapa: humanizing
+
+[2026-03-02T16:49:08.306Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+[2026-03-02T16:49:08.315Z] Flask Log: Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s]
+[2026-03-02T16:49:08.315Z] Flask Output: 
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-03-02T16:49:08.321Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:49:10.921Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L15046.htm
+
+[2026-03-02T16:49:11.215Z] Flask Output: [OK] Lei extraida com sucesso! (2590 caracteres)
+
+[2026-03-02T16:49:11.231Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-03-02T16:49:11.231Z] Flask Log: 
+Humanizando:   0%|          | 0/1 [00:00<?, ?parte/s][A
+[2026-03-02T16:49:11.232Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (2590 chars). Dividindo em partes...
+Processando 1 partes...
+
+  [Progresso] Humanizando parte 1/1 (Tentativa 1/3)
+
+[2026-03-02T16:49:23.331Z] [Gemini] Timeout carregando Gemini, prosseguindo mesmo assim...
+[2026-03-02T16:49:28.363Z] [Gemini] Executando script de automação...
+[2026-03-02T16:49:52.098Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro ..."
+[2026-03-02T16:49:52.103Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:49:52.109Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-03-02T16:49:57.151Z] [Gemini] Executando script de automação...
+[2026-03-02T16:50:08.724Z] [Gemini] Script retornou: "Presidência da República. Casa Civil. Secretaria Especial para Assuntos Jurídicos.
+Lei número quinze mil e quarenta e seis, de dezessete de dezembro d..."
+[2026-03-02T16:50:08.725Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:50:08.726Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-03-02T16:50:13.754Z] [Gemini] Executando script de automação...
+[2026-03-02T16:50:22.381Z] [Gemini] Script retornou: "SIM..."
+[2026-03-02T16:50:22.381Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:50:22.382Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+
+[2026-03-02T16:50:22.383Z] Flask Log: Humanizando: 100%|██████████| 1/1 [01:14<00:00, 74.07s/parte]Humanizando: 100%|██████████| 1/1 [01:14<00:00, 74.07s/parte]
+
+[2026-03-02T16:50:22.383Z] Flask Output:   [V] Parte 1 aprovada pela IA: Aprovado pelo Gemini.
+
+[OK] Texto humanizado e verificado com sucesso! (1 partes)
+
+[2026-03-02T16:50:22.562Z] Flask Output: \n--- PROCESSANDO ÁUDIO ---
+
+[2026-03-02T16:50:22.562Z] Flask Output: Texto dividido em 6 partes para síntese.
+
+[2026-03-02T16:50:22.562Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-03-02T16:50:25.341Z] Flask Log: Gerando áudio:  17%|█▋        | 1/6 [00:02<00:13,  2.78s/parte]
+[2026-03-02T16:50:27.427Z] [Gemini] Executando script de automação...
+[2026-03-02T16:50:27.491Z] Flask Log: Gerando áudio:  33%|███▎      | 2/6 [00:04<00:09,  2.41s/parte]
+[2026-03-02T16:50:29.769Z] Flask Log: Gerando áudio:  50%|█████     | 3/6 [00:07<00:07,  2.35s/parte]
+[2026-03-02T16:50:31.923Z] Flask Log: Gerando áudio:  67%|██████▋   | 4/6 [00:09<00:04,  2.27s/parte]
+[2026-03-02T16:50:35.278Z] Flask Log: Gerando áudio:  83%|████████▎ | 5/6 [00:12<00:02,  2.66s/parte]
+[2026-03-02T16:50:37.485Z] Flask Log: Gerando áudio: 100%|██████████| 6/6 [00:14<00:00,  2.51s/parte]Gerando áudio: 100%|██████████| 6/6 [00:14<00:00,  2.49s/parte]
+
+[2026-03-02T16:50:37.485Z] Flask Output: 
+--- MESCLANDO 6 ARQUIVOS DE ÁUDIO (MÉTODO NATIVO) ---
+
+[2026-03-02T16:50:37.531Z] Flask Output: Áudio mesclado salvo em: jobs\3\L15046.mp3
+\n[OK] SUCESSO: Audio completo salvo em 'jobs\3\L15046.mp3'
+
+[2026-03-02T16:50:37.546Z] Flask Output: 
+[INFO] Gerando timestamps por frase...
+
+[2026-03-02T16:50:37.546Z] Flask Output: [INFO] Total de frases: 47
+[INFO] Duracao do audio: 107.1s
+
+[2026-03-02T16:50:37.547Z] Flask Output: [OK] Timestamps gerados: 47 frases
+[INFO] Sincronizacao rapida e eficiente!
+
+[2026-03-02T16:50:37.547Z] Flask Output: [SAVE] Timestamps salvos em: jobs\3\L15046_timestamps.json
+[OK] Sincronizacao por frases configurada!
+
+[2026-03-02T16:50:59.155Z] [Gemini] Script retornou: "SIM..."
+[2026-03-02T16:50:59.157Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+
+[2026-03-02T16:50:59.157Z] Flask Log: 
+Humanizando: 100%|██████████| 1/1 [01:47<00:00, 107.93s/parte][A
+[2026-03-02T16:50:59.157Z] Flask Output:   [V] Parte 1 aprovada pela IA: Aprovado pelo Gemini.
+
+[OK] Texto humanizado e verificado com sucesso! (1 partes)
+
+[2026-03-02T16:50:59.158Z] Flask Log: Humanizando: 100%|██████████| 1/1 [01:47<00:00, 107.93s/parte]
+
+[2026-03-02T16:50:59.197Z] Flask Output: \n--- PROCESSANDO ÁUDIO ---
+Texto dividido em 6 partes para síntese.
+
+[2026-03-02T16:50:59.197Z] Flask Log: Gerando áudio:   0%|          | 0/6 [00:00<?, ?parte/s]
+[2026-03-02T16:51:02.993Z] Flask Log: Gerando áudio:  17%|█▋        | 1/6 [00:03<00:18,  3.79s/parte]
+[2026-03-02T16:51:04.695Z] Flask Log: Gerando áudio:  33%|███▎      | 2/6 [00:05<00:10,  2.56s/parte]
+[2026-03-02T16:51:08.930Z] Flask Log: Gerando áudio:  50%|█████     | 3/6 [00:09<00:09,  3.33s/parte]
+[2026-03-02T16:51:11.099Z] Flask Log: Gerando áudio:  67%|██████▋   | 4/6 [00:11<00:05,  2.87s/parte]
+[2026-03-02T16:51:15.045Z] Flask Log: Gerando áudio:  83%|████████▎ | 5/6 [00:15<00:03,  3.26s/parte]
+[2026-03-02T16:51:17.107Z] Flask Log: Gerando áudio: 100%|██████████| 6/6 [00:17<00:00,  2.85s/parte]
+[2026-03-02T16:51:17.108Z] Flask Log: Gerando áudio: 100%|██████████| 6/6 [00:17<00:00,  2.98s/parte]
+
+[2026-03-02T16:51:17.109Z] Flask Output: 
+--- MESCLANDO 6 ARQUIVOS DE ÁUDIO (MÉTODO NATIVO) ---
+
+[2026-03-02T16:51:17.143Z] Flask Output: Áudio mesclado salvo em: jobs\4\L15046.mp3
+\n[OK] SUCESSO: Audio completo salvo em 'jobs\4\L15046.mp3'
+
+[2026-03-02T16:51:17.148Z] Flask Output: 
+[INFO] Gerando timestamps por frase...
+
+[2026-03-02T16:51:17.148Z] Flask Output: [INFO] Total de frases: 47
+[INFO] Duracao do audio: 106.6s
+
+[2026-03-02T16:51:17.148Z] Flask Output: [OK] Timestamps gerados: 47 frases
+[INFO] Sincronizacao rapida e eficiente!
+
+[2026-03-02T16:51:17.149Z] Flask Output: [SAVE] Timestamps salvos em: jobs\4\L15046_timestamps.json
+[OK] Sincronizacao por frases configurada!
+
+[2026-03-02T16:52:37.990Z] Iniciando servidor Python Flask...
+[2026-03-02T16:52:38.045Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:52:38.077Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:52:38.997Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:52:38.998Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:52:38.999Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:53:01.537Z] Iniciando servidor Python Flask...
+[2026-03-02T16:53:01.609Z] Criando janela do Gemini (oculta)...
+[2026-03-02T16:53:01.644Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T16:53:02.530Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T16:53:02.532Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T16:53:02.533Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T16:53:06.894Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T16:53:07.185Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T16:53:07.200Z] Flask Output: [Gemini Bridge] Conectado. Janela Gemini pronta: True
+
+[2026-03-02T16:53:07.201Z] Flask Output: 
+--- HUMANIZANDO TEXTO COM GEMINI (via Web) ---
+Texto grande detectado (10373 chars). Dividindo em partes...
+
+[2026-03-02T16:53:07.201Z] Flask Output: Processando 2 partes...
+
+[2026-03-02T16:53:07.201Z] Flask Output: 
+  [Progresso] Humanizando parte 1/2 (Tentativa 1/3)
+
+[2026-03-02T16:53:07.201Z] Flask Log: Humanizando:   0%|          | 0/2 [00:00<?, ?parte/s]
+[2026-03-02T16:53:07.226Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:53:12.245Z] [Gemini] Executando script de automação...
+[2026-03-02T16:53:34.987Z] [Gemini] Script retornou: "Presidência da República.
+Casa Civil.
+Subchefia para Assuntos Jurídicos.
+
+LEI número seis mil duzentos e oitenta e um, DE nove DE DEZEMBRO DE mil nove..."
+[2026-03-02T16:53:34.992Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 1...
+
+[2026-03-02T16:53:34.993Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:53:40.054Z] [Gemini] Executando script de automação...
+[2026-03-02T16:53:49.641Z] [Gemini] Script retornou: "SIM..."
+[2026-03-02T16:53:49.644Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+
+[2026-03-02T16:53:49.644Z] Flask Output:   [V] Parte 1 aprovada pela IA: Aprovado pelo Gemini.
+
+[2026-03-02T16:53:49.644Z] Flask Log: Humanizando:  50%|█████     | 1/2 [00:42<00:42, 42.44s/parte]
+[2026-03-02T16:53:49.645Z] Flask Output: 
+  [Progresso] Humanizando parte 2/2 (Tentativa 1/3)
+
+[2026-03-02T16:53:49.646Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:53:54.699Z] [Gemini] Executando script de automação...
+[2026-03-02T16:54:32.584Z] [Gemini] Script retornou: "Parágrafo terceiro. A programação dos cinemas somente será aprovada pelo órgão de censura federal, mediante prova do cumprimento da exibição obrigatór..."
+[2026-03-02T16:54:32.587Z] Flask Output:   [Auditoria] Verificando qualidade da conversão da parte 2...
+
+[2026-03-02T16:54:32.588Z] [Gemini] Processando chunk (tentativa 1)...
+[2026-03-02T16:54:37.646Z] [Gemini] Executando script de automação...
+[2026-03-02T16:54:46.233Z] [Gemini] Script retornou: "SIM..."
+[2026-03-02T16:54:46.236Z] Flask Output:     -> Resposta Bruta do Gemini: "SIM..."
+  [V] Parte 2 aprovada pela IA: Aprovado pelo Gemini.
+
+[OK] Texto humanizado e verificado com sucesso! (2 partes)
+
+[2026-03-02T16:54:46.237Z] Flask Log: Humanizando: 100%|██████████| 2/2 [01:39<00:00, 50.77s/parte]Humanizando: 100%|██████████| 2/2 [01:39<00:00, 49.52s/parte]
+
+[2026-03-02T16:54:46.414Z] Flask Output: \n--- PROCESSANDO ÁUDIO ---
+
+[2026-03-02T16:54:46.414Z] Flask Output: Texto dividido em 25 partes para síntese.
+
+[2026-03-02T16:54:46.415Z] Flask Log: Gerando áudio:   0%|          | 0/25 [00:00<?, ?parte/s]
+[2026-03-02T16:54:49.139Z] Flask Log: Gerando áudio:   4%|▍         | 1/25 [00:02<01:05,  2.72s/parte]
+[2026-03-02T16:54:50.517Z] Flask Log: Gerando áudio:   8%|▊         | 2/25 [00:04<00:44,  1.93s/parte]
+[2026-03-02T16:54:52.276Z] Flask Log: Gerando áudio:  12%|█▏        | 3/25 [00:05<00:40,  1.85s/parte]
+[2026-03-02T16:54:54.891Z] Flask Log: Gerando áudio:  16%|█▌        | 4/25 [00:08<00:45,  2.15s/parte]
+[2026-03-02T16:54:57.318Z] Flask Log: Gerando áudio:  20%|██        | 5/25 [00:10<00:45,  2.25s/parte]
+[2026-03-02T16:55:00.964Z] Flask Log: Gerando áudio:  24%|██▍       | 6/25 [00:14<00:51,  2.73s/parte]
+[2026-03-02T16:55:04.385Z] Flask Log: Gerando áudio:  28%|██▊       | 7/25 [00:17<00:53,  2.95s/parte]
+[2026-03-02T16:55:07.064Z] Flask Log: Gerando áudio:  32%|███▏      | 8/25 [00:20<00:48,  2.87s/parte]
+[2026-03-02T16:55:10.424Z] Flask Log: Gerando áudio:  36%|███▌      | 9/25 [00:24<00:48,  3.02s/parte]
+[2026-03-02T16:55:13.377Z] Flask Log: Gerando áudio:  40%|████      | 10/25 [00:26<00:44,  3.00s/parte]
+[2026-03-02T16:55:15.610Z] Flask Log: Gerando áudio:  44%|████▍     | 11/25 [00:29<00:38,  2.77s/parte]
+[2026-03-02T16:55:17.696Z] Flask Log: Gerando áudio:  48%|████▊     | 12/25 [00:31<00:33,  2.56s/parte]
+[2026-03-02T16:55:20.472Z] Flask Log: Gerando áudio:  52%|█████▏    | 13/25 [00:34<00:31,  2.62s/parte]
+[2026-03-02T16:55:25.067Z] Flask Log: Gerando áudio:  56%|█████▌    | 14/25 [00:38<00:35,  3.22s/parte]
+[2026-03-02T16:55:27.590Z] Flask Log: Gerando áudio:  60%|██████    | 15/25 [00:41<00:30,  3.01s/parte]
+[2026-03-02T16:55:29.819Z] Flask Log: Gerando áudio:  64%|██████▍   | 16/25 [00:43<00:24,  2.77s/parte]
+[2026-03-02T16:55:32.481Z] Flask Log: Gerando áudio:  68%|██████▊   | 17/25 [00:46<00:21,  2.74s/parte]
+[2026-03-02T16:55:34.987Z] Flask Log: Gerando áudio:  72%|███████▏  | 18/25 [00:48<00:18,  2.67s/parte]
+[2026-03-02T16:55:37.261Z] Flask Log: Gerando áudio:  76%|███████▌  | 19/25 [00:50<00:15,  2.55s/parte]
+[2026-03-02T16:55:40.565Z] Flask Log: Gerando áudio:  80%|████████  | 20/25 [00:54<00:13,  2.78s/parte]
+[2026-03-02T16:55:42.701Z] Flask Log: Gerando áudio:  84%|████████▍ | 21/25 [00:56<00:10,  2.58s/parte]
+[2026-03-02T16:55:44.925Z] Flask Log: Gerando áudio:  88%|████████▊ | 22/25 [00:58<00:07,  2.48s/parte]
+[2026-03-02T16:55:46.559Z] Flask Log: Gerando áudio:  92%|█████████▏| 23/25 [01:00<00:04,  2.22s/parte]
+[2026-03-02T16:55:49.126Z] Flask Log: Gerando áudio:  96%|█████████▌| 24/25 [01:02<00:02,  2.33s/parte]
+[2026-03-02T16:55:50.748Z] Flask Log: Gerando áudio: 100%|██████████| 25/25 [01:04<00:00,  2.11s/parte]
+[2026-03-02T16:55:50.758Z] Flask Log: Gerando áudio: 100%|██████████| 25/25 [01:04<00:00,  2.57s/parte]
+
+[2026-03-02T16:55:50.760Z] Flask Output: 
+--- MESCLANDO 25 ARQUIVOS DE ÁUDIO (MÉTODO NATIVO) ---
+
+[2026-03-02T16:55:50.886Z] Flask Output: Áudio mesclado salvo em: jobs\1\l6281.mp3
+[2026-03-02T16:55:50.887Z] Flask Output: 
+\n[OK] SUCESSO: Audio completo salvo em 'jobs\1\l6281.mp3'
+
+[2026-03-02T16:55:50.895Z] Flask Output: 
+[INFO] Gerando timestamps por frase...
+
+[2026-03-02T16:55:50.895Z] Flask Output: [INFO] Total de frases: 131
+[INFO] Duracao do audio: 425.3s
+
+[2026-03-02T16:55:50.895Z] Flask Output: [OK] Timestamps gerados: 131 frases
+[INFO] Sincronizacao rapida e eficiente!
+
+[2026-03-02T16:55:50.896Z] Flask Output: [SAVE] Timestamps salvos em: jobs\1\l6281_timestamps.json
+[OK] Sincronizacao por frases configurada!
+
+[2026-03-02T17:00:04.960Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T17:00:05.249Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T17:00:05.252Z] Flask Output: [Job 2] Lei idêntica detectada! Retornando áudio do Job #1.
+
+[2026-03-02T17:05:54.209Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T17:05:54.807Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T17:05:54.810Z] Flask Output: [Job 3] Lei idêntica detectada! Retornando áudio do Job #1.
+
+[2026-03-02T17:08:49.264Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T17:08:49.576Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T17:08:49.579Z] Flask Output: [Job 4] Lei idêntica detectada! Retornando áudio do Job #1.
+
+[2026-03-02T17:09:02.292Z] Iniciando servidor Python Flask...
+[2026-03-02T17:09:02.349Z] Criando janela do Gemini (oculta)...
+[2026-03-02T17:09:02.397Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T17:09:04.096Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T17:09:04.097Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T17:09:04.099Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T17:09:08.214Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T17:09:08.493Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T17:35:01.597Z] Iniciando servidor Python Flask...
+[2026-03-02T17:35:01.658Z] Criando janela do Gemini (oculta)...
+[2026-03-02T17:35:01.694Z] [IPC Server] Servidor de bridge rodando na porta 5001
+[2026-03-02T17:35:02.694Z] Flask Output: ============================================================
+SISTEMA faLei - WEB
+============================================================
+
+[INFO] Acesse: http://localhost:5000
+[INFO] Historico: http://localhost:5000/history
+
+[2026-03-02T17:35:02.695Z] Flask Output: 
+[INFO] Atualizando banco de dados com law_name...
+
+[2026-03-02T17:35:02.705Z] Flask Output: [OK] Nomes de leis gerados retroativamente!
+
+[2026-03-02T17:35:02.707Z] Flask Output: 
+Pressione Ctrl+C para parar o servidor
+
+
+[2026-03-02T17:35:02.708Z] Flask Output:  * Serving Flask app 'app'
+ * Debug mode: on
+
+[2026-03-02T17:35:17.589Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T17:35:18.075Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+
+[2026-03-02T17:35:58.124Z] Flask Output: 
+[INFO] Buscando lei em: https://www.planalto.gov.br/ccivil_03/leis/1970-1979/l6281.htm
+
+[2026-03-02T17:35:58.441Z] Flask Output: [OK] Lei extraida com sucesso! (10373 caracteres)
+

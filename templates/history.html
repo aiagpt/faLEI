@@ -246,6 +246,18 @@
             color: #9ca3af;
             font-size: 1.1rem;
         }
+
+        .audio-container {
+            margin: 15px 0;
+            width: 100%;
+        }
+
+        .audio-container audio {
+            width: 100%;
+            height: 38px;
+            outline: none;
+            border-radius: 8px;
+        }
     </style>
 </head>
 
@@ -298,7 +310,7 @@
                 <div class="job-card" data-url="${job.url.toLowerCase()}" data-id="${job.id}">
                     <div class="job-header">
                         <div>
-                            <div class="job-title">Job #${job.id}</div>
+                            <div class="job-title">${job.law_name ? job.law_name : 'Job #' + job.id}</div>
                             <div class="job-url">${job.url}</div>
                         </div>
                         <span class="status-badge ${statusInfo.class}">${statusInfo.text}</span>
@@ -308,6 +320,18 @@
                         <span>🕒 ${timeAgo}</span>
                         ${job.message ? `<span>• ${job.message}</span>` : ''}
                     </div>
+
+                    ${job.status === 'complete' && job.filename ? `
+                    <div class="audio-container">
+                        <audio controls preload="none" src="/audio/${job.id}"></audio>
+                    </div>
+                    ` : ''}
+
+                    ${job.status === 'duplicate' && job.error ? `
+                    <div class="audio-container">
+                        <audio controls preload="none" src="/audio/${job.error}"></audio>
+                    </div>
+                    ` : ''}
 
                     <div class="job-buttons">
                         ${getButtons(job)}
@@ -320,6 +344,7 @@
         function getStatusInfo(status) {
             switch (status) {
                 case 'complete': return { class: 'status-complete', text: 'Concluído' };
+                case 'duplicate': return { class: 'status-complete', text: 'Duplicata' };
                 case 'error': return { class: 'status-error', text: 'Erro' };
                 case 'pending': return { class: 'status-pending', text: 'Pendente' };
                 default: return { class: 'status-processing', text: 'Processando' };
@@ -330,6 +355,8 @@
             let btns = '';
             if (job.status === 'complete' && job.filename) {
                 btns += `<button class="action-btn btn-download" onclick="download(${job.id})">📥 Baixar ZIP</button>`;
+            } else if (job.status === 'duplicate' && job.error) {
+                btns += `<button class="action-btn btn-download" onclick="download(${job.error})">📥 Baixar ZIP</button>`;
             }
             if (job.status === 'error') {
                 btns += `<button class="action-btn btn-retry" onclick="resume(${job.id})">🔄 Tentar Novamente</button>`;
@@ -371,7 +398,7 @@
         loadJobs();
         // Auto refresh se houver jobs ativos
         setInterval(() => {
-            if (allJobs.some(j => !['complete', 'error'].includes(j.status))) loadJobs();
+            if (allJobs.some(j => !['complete', 'error', 'duplicate'].includes(j.status))) loadJobs();
         }, 3000);
     </script>
 </body>

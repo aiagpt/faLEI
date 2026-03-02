@@ -428,6 +428,13 @@
                 📥 Baixar ZIP (Áudio + Texto)
             </button>
 
+            <!-- Audio Player -->
+            <div id="audioPlayerContainer" style="display: none; margin-top: 20px; text-align: center;">
+                <p style="font-size: 0.9rem; font-weight: 600; color: #475569; margin-bottom: 8px;">Ouça o áudio da lei:
+                </p>
+                <audio id="audioPlayer" controls style="width: 100%; outline: none; border-radius: 8px;"></audio>
+            </div>
+
             <!-- Visualizador do texto humanizado -->
             <div class="text-preview" id="textPreview">
                 <div class="text-preview-header" onclick="toggleText()">
@@ -514,8 +521,38 @@
                 }
 
                 const data = await response.json();
-                currentJobId = data.job_id;
-                statusInterval = setInterval(checkStatus, 1000);
+
+                if (data.is_duplicate) {
+                    // Tratar duplicata sem iniciar pooling e sem Job inútil no backend
+                    document.getElementById('statusMessage').innerHTML = '⚠️ <strong>' + data.message + '</strong>';
+                    document.getElementById('progressFill').style.background = '#f59e0b';
+                    document.getElementById('progressFill').style.width = '100%';
+                    document.getElementById('progressPercent').textContent = '100%';
+                    document.getElementById('downloadBtn').classList.add('active');
+
+                    const btn = document.getElementById('processBtn');
+                    btn.disabled = false;
+                    btn.textContent = 'Converter Outra Lei';
+
+                    currentJobId = data.original_job_id;
+                    showAudio(currentJobId);
+
+                    try {
+                        const r = await fetch(`/job-text/${currentJobId}`);
+                        const textData = await r.json();
+                        if (textData.text) {
+                            document.getElementById('textContent').textContent = textData.text;
+                            document.getElementById('textPreview').classList.add('active');
+                            toggleText(true);
+                        }
+                    } catch (e) { }
+
+                } else {
+                    // Lei inédita: iniciar pooling
+                    currentJobId = data.job_id;
+                    document.getElementById('statusMessage').textContent = 'Buscando lei...';
+                    statusInterval = setInterval(checkStatus, 1000);
+                }
 
             } catch (error) {
                 showError(error.message);
@@ -560,6 +597,8 @@
             const btn = document.getElementById('processBtn');
             btn.disabled = false;
             btn.textContent = 'Converter Outra Lei';
+
+            showAudio(currentJobId);
 
             // Carregar e exibir o texto humanizado
             try {
@@ -610,6 +649,13 @@
             el.classList.add('active');
         }
 
+        function showAudio(jobId) {
+            const playerContainer = document.getElementById('audioPlayerContainer');
+            const player = document.getElementById('audioPlayer');
+            player.src = `/audio/${jobId}`;
+            playerContainer.style.display = 'block';
+        }
+
         function resetUI() {
             clearInterval(statusInterval);
             const btn = document.getElementById('processBtn');
@@ -620,6 +666,8 @@
             document.getElementById('textBody').classList.remove('open');
             document.getElementById('chevron').classList.remove('open');
             document.getElementById('textContent').textContent = 'Carregando...';
+            document.getElementById('audioPlayerContainer').style.display = 'none';
+            document.getElementById('audioPlayer').pause();
         }
 
         // Enter key to submit
